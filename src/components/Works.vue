@@ -51,7 +51,7 @@
           <div style="height: 120px;background-color: lightgoldenrodyellow"></div>
         </b-col>
       </b-row>
-      <!----------------->
+      <!---->
 
       <b-row class="justify-content-center">
         <b-col xl="3" align-self="center">
@@ -99,7 +99,7 @@
           <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
         </b-col>
       </b-row>
-      <!----------------->
+      <!---->
     </b-container>
 
     <!--Page 3-->
@@ -111,7 +111,7 @@
           <div style="height: 120px;background-color: lightgoldenrodyellow"></div>
         </b-col>
       </b-row>
-      <!----------------->
+      <!---->
 
       <b-row class="justify-content-center">
         <b-col xl="6">
@@ -298,7 +298,7 @@
           <div style="height: 80px;background-color: lavender"></div>
         </b-col>
       </b-row>
-      <!----------------->
+      <!---->
     </b-container>
 
   </div>
