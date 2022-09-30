@@ -1,0 +1,7 @@
+.picGrid {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 473px 334px 245px 238px 630px;
+  grid-template-rows: 100px 124px 210px 96px 281px;
+}

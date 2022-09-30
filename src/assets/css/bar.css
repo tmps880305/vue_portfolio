@@ -1,0 +1,93 @@
+.mybarcontainer {
+  margin-left: 480px;
+  width: 960px;
+  height: 80px;
+  background-color: #FFFFFF;
+  z-index: 11;
+  position: fixed;
+}
+
+.mybarblank {
+  width: 1920px;
+  height: 80px;
+  background-color: #FFFFFF;
+  z-index: 10;
+  position: fixed;
+}
+
+.myCopyright {
+  /*margin-top: 900px;*/
+  bottom: 0px;
+  width: 1920px;
+  height: 80px;
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 11;
+}
+
+.navBut {
+  width: 70px;
+  height: 60px;
+  margin-left: 30px;
+  background-color: white;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Nunito Sans', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #004977;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navButLong {
+  width: 125px;
+  height: 60px;
+  margin-left: 30px;
+  background-color: white;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Nunito Sans', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #004977;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navButFar {
+  width: 70px;
+  height: 60px;
+  margin-left: 345px;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Nunito Sans', 'sans-serif';
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #004977;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navLogo {
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Nunito Sans', 'sans-serif';
+  font-size: 16px;
+}
+
+.logoPic {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  margin-top: 15px;
+  margin-left: 480px;
+  z-index: 12;
+  cursor: pointer
+}

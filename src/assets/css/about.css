@@ -1,0 +1,23 @@
+.myAbcontainer {
+  margin-left: 480px;
+  padding-top: 90px;
+  width: auto;
+  height: auto;
+  /*background-color: rgba(51, 170, 51, .4);*/
+}
+
+.subPicGridOdd {
+  width: auto;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 80px 300px 20px 482px;
+  grid-template-rows: 20px 20px 105px 46px 34px 25px;
+}
+
+.subPicGridEven {
+  width: auto;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 80px 482px 20px 300px;
+  grid-template-rows: 20px 20px 105px 46px 34px 25px;
+}
