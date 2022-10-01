@@ -1,102 +1,69 @@
 <template>
-  <div style="padding-top: 80px; background-color: lightgray">
+  <div style="padding-top: 80px; background-color: transparent">
 
     <!--Page 1-->
-    <b-container fluid>
-      <b-row class="justify-content-center">
-        <b-col col xl="8" style="background-color: lightblue; height: 720px">image</b-col>
+    <b-container fluid style="height: 90vh">
+      <b-row class="mb-3 justify-content-center">
+        <b-col xl="8">
+          <div class="ratio ratio-16x9">
+            <img :src="mainPic">
+          </div>
+        </b-col>
       </b-row>
-      <b-row class="justify-content-center" style="height: 175px">
-        <b-col xl="2" style="background-color: lightpink; text-align: center">
+
+      <b-row cols="3" class="justify-content-center">
+        <b-col xl="2" style="background-color: transparent; text-align: center" v-for="mainInfo in mainInfos">
           <div class="t-tl-1">
-            <a>Tags</a>
+            <a>{{mainInfo.title}}</a>
           </div>
-          <div class="t-it-1">
-            <a>Accessibility</a><br>
-            <a>UX Design</a><br>
-            <a>Usability Test</a>
+
+          <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
+            <a v-for="item in mainInfo.items">{{item}}<br></a>
           </div>
-        </b-col>
-        <b-col xl="2" style="background-color: lightcyan; text-align: center">
-          <div class="t-tl-1">
-            <a>My Role</a>
+          <div v-else-if="mainInfo.id ===2">
+            <b-row class="justify-content-center">
+              <b-col cols="2" v-for="item in mainInfo.items">
+                <img :src="require('@/assets/img/something/'+item)" style="width: 30px">
+              </b-col>
+            </b-row>
           </div>
-          <div class="t-it-1">
-            <a>UI Developer</a><br>
-            <a>UX Researcher</a><br>
-            <a>System Developer</a>
-          </div>
-        </b-col>
-        <b-col xl="2" style="background-color: lightpink; text-align: center">
-          <div class="t-tl-1">
-            <a>Tools</a>
-          </div>
-          <b-row class="justify-content-center">
-            <b-col xl="1" offset-xl="1" style="background-color: lightblue; text-align: center">A</b-col>
-            <b-col xl="1" offset-xl="1" style="background-color: lightblue; text-align: center">A</b-col>
-            <b-col xl="1" offset-xl="1" style="background-color: lightblue; text-align: center">A</b-col>
-            <b-col xl="1" offset-xl="1" style="background-color: lightblue; text-align: center">A</b-col>
-          </b-row>
         </b-col>
       </b-row>
     </b-container>
 
     <!--Page 2-->
-    <b-container fluid>
+    <b-container fluid style="height: 90vh">
 
       <!--Start of page-->
       <b-row>
         <b-col>
-          <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
-          <div style="height: 120px;background-color: lightgoldenrodyellow"></div>
+          <div style="height: 60px;background-color: transparent"></div>
+          <div style="height: 120px;background-color: transparent"></div>
         </b-col>
       </b-row>
       <!---->
 
       <b-row class="justify-content-center">
         <b-col xl="3" align-self="center">
-          <div style="background-color: lightpink;">
-            <div>
-              <div class="t-it-1">
-                <a>Prompt</a>
-              </div>
-              <div class="t-it-2">
-                <a>Interface control could become hand-free to provide accessibility for people in hand-busy
-                  situations.</a>
-              </div>
-            </div>
-            <br>
-
-            <div>
-              <div class="t-it-1">
-                <a>Problem</a>
-              </div>
-              <div class="t-it-2">
-                <a>People with hand-related impairments or situational impairments would have a hard time applying
-                  physical interface control.</a>
-              </div>
-            </div>
-            <br>
-
-            <div>
-              <div class="t-it-1">
-                <a>Solution</a>
-              </div>
-              <div class="t-it-2">
-                <a>Construct Voice User Interface to allow the user to control devices with speech input.</a>
-              </div>
+          <div v-for="mtvInfo in motivateInfos" style="background-color: transparent;">
+            <div class="mb-3">
+              <div class="t-it-1">{{mtvInfo.title}}</div>
+              <div class="t-it-2">{{mtvInfo.sentence}}</div>
             </div>
           </div>
         </b-col>
+
         <b-col xl="3">
-          <div style="height: 720px;background-color: lightblue"><a>image</a></div>
+          <div class="ratio" style="--bs-aspect-ratio: 150%">
+            <img :src="mainPic.img">
+          </div>
         </b-col>
       </b-row>
 
       <!--End of page-->
       <b-row>
         <b-col>
-          <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
+          <div style="height: 60px;background-color: transparent"></div>
         </b-col>
       </b-row>
       <!---->
@@ -107,8 +74,8 @@
       <!--Start of page-->
       <b-row>
         <b-col>
-          <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
-          <div style="height: 120px;background-color: lightgoldenrodyellow"></div>
+          <div style="height: 60px;background-color: transparent"></div>
+          <div style="height: 120px;background-color: transparent"></div>
         </b-col>
       </b-row>
       <!---->
@@ -116,43 +83,44 @@
       <b-row class="justify-content-center">
         <b-col xl="6">
           <b-row>
-            <div style="background-color: lightpink">
-              <div class="t-tl-1">
-                <a>Introduction</a>
-              </div>
-
-              <div class="t-it-1">
-                <a>Interface control could become hand-free to provide accessibility for people in hand-busy
-                  situations.Interface control could become hand-free to provide accessibility for people in hand-busy
-                  situations.Interface control could become hand-free to provide accessibility for people in hand-busy
-                  situations.</a>
-              </div>
+            <div style="background-color: transparent">
+              <div class="t-tl-1">{{intro.title}}</div>
+              <div class="t-it-1">{{intro.content}}</div>
             </div>
           </b-row>
 
           <b-row>
-            <div style="height: 60px;background-color: lightgoldenrodyellow">
+            <div style="height: 60px;background-color: transparent">
             </div>
           </b-row>
 
           <b-row>
-            <div style="background-color: lightpink">
-              <div class="t-tl-1">
-                <a>Progress</a>
-              </div>
+            <div style="background-color: transparent">
+              <div class="t-tl-1">{{process.title}}</div>
               <div style="height: 120px;background-color: lightblue">
-                image
+                <img :src="process.img" style="height: 100%; width: 100%">
               </div>
             </div>
           </b-row>
 
-          <b-row>
-            <div style="height: 60px;background-color: lightgoldenrodyellow">
-            </div>
-          </b-row>
+        </b-col>
+      </b-row>
+    </b-container>
 
+    <!--Page 4-->
+    <b-container fluid>
+      <!--Start of page-->
+      <b-row>
+        <b-col>
+          <div style="height: 60px;background-color: transparent"></div>
+        </b-col>
+      </b-row>
+      <!---->
+
+      <b-row class="justify-content-center">
+        <b-col xl="6">
           <b-row>
-            <div style="background-color: lightpink">
+            <div style="background-color: transparent">
               <div class="t-tl-1">
                 <a>Approach</a>
               </div>
@@ -263,12 +231,12 @@
           </b-row>
 
           <b-row>
-            <div style="height: 60px;background-color: lightgoldenrodyellow">
+            <div style="height: 60px;background-color: transparent">
             </div>
           </b-row>
 
           <b-row>
-            <div style="background-color: lightpink">
+            <div style="background-color: transparent">
               <div class="t-tl-1">
                 <a>Demo Video</a>
               </div>
@@ -279,26 +247,34 @@
                 video
               </div>
 
-
             </div>
           </b-row>
 
 
           <b-row>
-            <div style="height: 180px;background-color: lightgoldenrodyellow">
+            <div style="height: 180px;background-color: transparent">
             </div>
           </b-row>
 
         </b-col>
       </b-row>
+    </b-container>
 
-      <!--Copyright-->
+    <!--Page 5-->
+    <b-container fluid>
       <b-row>
-        <b-col>
-          <div style="height: 80px;background-color: lavender"></div>
+        <!--blank-->
+        <div style="height: 80px;background-color: lavender"></div>
+      </b-row>
+
+      <b-row class="justify-content-center">
+        <b-col xl="6">
+          <b-row>
+            <!--Copyright-->
+            <div style="height: 60px;background-color: transparent"></div>
+          </b-row>
         </b-col>
       </b-row>
-      <!---->
     </b-container>
 
   </div>
@@ -310,68 +286,35 @@
     name: 'Works',
     data() {
       return {
-        selectedCard: -1,
-        mainPic: {
-          id: '0',
-          img: require('@/assets/img/IMG_0601.jpg'),
-          topic: 'Traveling Boracay',
-          subTopic: 'secret beach behind the island',
-          artiLink: '/artiPhoto/mainPic'
+        mainPic: require('@/assets/img/IMG_0601.jpg'),
+        mainInfos: [{
+          id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
+        }, {
+          id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
+        }, {
+          id: 2, title: 'Tools', items: ['cross.jpg', 'cross.jpg', 'cross.jpg', 'cross.jpg']
+        }],
+        motivateInfos: [{
+          id: 0,
+          title: 'Prompt',
+          sentence: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
+        }, {
+          id: 1,
+          title: 'Problem',
+          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
+        }, {
+          id: 2,
+          title: 'Solution',
+          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
+        }],
+        intro: {
+          title: 'Introduction',
+          content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        toSeeMore: require('@/assets/img/toSeeMore.png'),
-        works: [{
-          id: '1', img: require('@/assets/img/works/personalWebsite/perWebTopPic.png'), name: 'perWebTopPic',
-          info: 'Snowphfee'
-        }, {
-          id: '2',
-          img: require('@/assets/img/works/oppoassign/opAsignTopPic.png'),
-          name: 'opAsignTopPic', info: 'Dispatch System'
-        }, {
-          id: '3',
-          img: require('@/assets/img/works/objectivec/objTopPic.png'), name: 'objTopPic', info: 'Objective-C APP'
-        }, {id: '4', img: require('@/assets/img/works/conLab/robot.jpg'), name: 'robot', info: 'Arduino Robot'},
-          //   {
-          //   id: '5',
-          //   img: require('@/assets/img/IMG_5261.jpg'), name: 'IMG_5261'
-          // }, {id: '6', img: require('@/assets/img/IMG_1745.jpg'), name: 'IMG_1745'}, {
-          //   id: '7',
-          //   img: require('@/assets/img/IMG_0601.jpg'),
-          //   name: 'IMG_0601'
-          // }, {
-          //   id: '8',
-          //   img: require('@/assets/img/IMG_5608.jpg'),
-          //   name: 'IMG_5608'
-          // }
-        ],
+        process: {title: 'Process', img: require('@/assets/img/IMG_0601.jpg')},
       }
     },
-    methods: {
-      goToArti(val) {
-        switch (val) {
-          case 0:
-            this.$router.push("ArticleWorkMyweb")
-            break
-          case 1:
-            this.$router.push("ArticleWorkAssign")
-            break
-          case 2:
-            this.$router.push("ArticleWorkObjC")
-            break
-          case 3:
-            this.$router.push("Works")
-            break
-          case 4:
-            alert("To be continued...")
-            break
-        }
-      },
-      hoverCard(selectedIndex) {
-        this.selectedCard = selectedIndex
-      },
-      isSelected(cardIndex) {
-        return this.selectedCard === cardIndex
-      }
-    },
+    methods: {},
   }
 </script>
 
@@ -407,7 +350,7 @@
   .t-it-1 {
     font-family: 'Nunito Sans', 'sans-serif';
     font-size: 18px;
-    letter-spacing: 2px;
+    /*letter-spacing: 2px;*/
     color: #000000;
   }
 
