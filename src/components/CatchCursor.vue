@@ -12,17 +12,18 @@
       </b-row>
 
       <b-row cols="3" class="justify-content-center">
-        <b-col xl="2" style="background-color: transparent; text-align: center" v-for="mainInfo in mainInfos">
+        <b-col xl="2" style="background-color: transparent; text-align: center" v-for="mainInfo in mainInfos"
+               v-bind:data="mainInfo" v-bind:key="mainInfo.title">
           <div class="t-tl-1">
             <a>{{mainInfo.title}}</a>
           </div>
 
           <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
-            <a v-for="item in mainInfo.items">{{item}}<br></a>
+            <a v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">{{item}}<br></a>
           </div>
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
-              <b-col cols="2" v-for="item in mainInfo.items">
+              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">
                 <img :src="require('@/assets/img/something/'+item)" style="width: 30px">
               </b-col>
             </b-row>
@@ -45,7 +46,8 @@
 
       <b-row class="justify-content-center">
         <b-col xl="3" align-self="center">
-          <div v-for="mtvInfo in motivateInfos" style="background-color: transparent;">
+          <div v-for="mtvInfo in motivateInfos" v-bind:data="mtvInfo" v-bind:key="mtvInfo"
+               style="background-color: transparent;">
             <div class="mb-3">
               <div class="t-it-1">{{mtvInfo.title}}</div>
               <div class="t-it-2">{{mtvInfo.sentence}}</div>
@@ -55,7 +57,7 @@
 
         <b-col xl="3">
           <div class="ratio" style="--bs-aspect-ratio: 150%">
-            <img :src="mainPic.img">
+            <img :src="mainPic">
           </div>
         </b-col>
       </b-row>
@@ -125,15 +127,17 @@
                 <a>Approach</a>
               </div>
 
-              <div class="t-it-1">
-                <ul style="list-style-type: decimal">
-                  <li>Receiving speech input from the user</li>
-                  <li>Construct dataset and speech recognition module</li>
-                  <li>Build speech recognition on Raspberry Pi server</li>
-                  <li>Build cursor control client</li>
-                </ul>
-                <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                  image
+              <div>
+                <div class="t-it-1">
+                  <ul style="list-style-type: decimal">
+                    <li>Receiving speech input from the user</li>
+                    <li>Construct dataset and speech recognition module</li>
+                    <li>Build speech recognition on Raspberry Pi server</li>
+                    <li>Build cursor control client</li>
+                  </ul>
+                  <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
+                    image
+                  </div>
                 </div>
 
                 <div class="t-tl-2 mt-3">
@@ -271,7 +275,7 @@
         <b-col xl="6">
           <b-row>
             <!--Copyright-->
-            <div style="height: 60px;background-color: transparent"></div>
+            <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
           </b-row>
         </b-col>
       </b-row>
@@ -283,7 +287,7 @@
 
 <script>
   export default {
-    name: 'Works',
+    name: 'CatchCursor',
     data() {
       return {
         mainPic: require('@/assets/img/IMG_0601.jpg'),

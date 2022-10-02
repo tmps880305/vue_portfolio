@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import Welcome from '@/components/Welcome'
 import About from '@/components/About'
 import Coffee from '@/components/Coffee'
-import Photo from '@/components/Photo'
-import Snowboard from '@/components/Snowboard'
-import Works from '@/components/Works'
+import ZoomRedesign from '@/components/ZoomRedesign'
+import PixelPaper from '@/components/PixelPaper'
+import CatchCursor from '@/components/CatchCursor'
 import Article from '@/components/Article'
 import ArticleWorkMyweb from '@/components/ArticleWorkMyweb'
 import ArticleWorkAssign from '@/components/ArticleWorkAssign'
@@ -26,8 +26,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Works',
-      component: Works
+      name: 'CatchCursor',
+      component: CatchCursor
     },
     {
       path: '/about',
@@ -40,18 +40,18 @@ export default new Router({
       component: Coffee
     },
     {
-      path: '/photo',
-      name: 'Photo',
-      component: Photo
+      path: '/zoomRedesign',
+      name: 'ZoomRedesign',
+      component: ZoomRedesign
     },{
-      path: '/snowboard',
-      name: 'Snowboard',
-      component: Snowboard
+      path: '/pixelPaper',
+      name: 'PixelPaper',
+      component: PixelPaper
     },
     {
-      path: '/works',
-      name: 'Works',
-      component: Works
+      path: '/catchCursor',
+      name: 'CatchCursor',
+      component: CatchCursor
     },
     {
       path: '/article',
