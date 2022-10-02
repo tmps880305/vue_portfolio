@@ -126,137 +126,220 @@
               <div class="t-tl-1">
                 <a>Approach</a>
               </div>
+
               <div>
-                <div class="t-it-1">
-                  <ul style="list-style-type: decimal">
-                    <li>Receiving speech input from the user</li>
-                    <li>Construct dataset and speech recognition module</li>
-                    <li>Build speech recognition on Raspberry Pi server</li>
-                    <li>Build cursor control client</li>
-                  </ul>
-                  <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                    image
-                  </div>
-                </div>
                 <div class="t-tl-2 mt-3">
-                  <a>Receiving speech input from the user</a>
+                  <a>Kickoff Meeting with Pixel Paper</a>
                 </div>
 
-                <div class="t-it-1 mb-3">
-                  <a>A Logitech C310 HD Webcam with built-in microphone is used to receive speech input from the user
-                    since the built-in microphone supports 16000 Hz sampling rate which matched settings of the dataset
-                    and speech recognition module. The webcam is connected to the Raspberry Pi through USB port and
-                    would be run by Python codes when the system launched.
-                  </a>
+                <div class="t-tl-3">
+                  <a>Agenda</a>
                 </div>
+                <div class="t-it-1 mb-3">
+                  <ul style="list-style-type: circle">
+                    <li>Introduction – Brief introduction between the client and our team.</li>
+                    <li>Client Project – First understanding of the project – Pixel Paper.</li>
+                    <li>Client Goals – Realize goals our client expected to approach.</li>
+                    <li>Project Scope – Insight the current state of Pixel Paper.</li>
+                    <li>Participant Profile – Target type of participants that our client would like to reach out.</li>
+                    <li>Company Concerns and Disclosures – Determine consent forms considering client company’s
+                      requirements.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="t-tl-3">
+                  <a>Report</a>
+                </div>
+                <div class="t-it-1 mb-3">
+                  <a>Edge Impulse, a no-code machine learning web system, was selected to construct the speech
+                    recognition module. First, an audio Edge Impulse project was created and all the prepared keyword
+                    datasets ...</a>
+                </div>
+
                 <div class="t-tl-2 mt-3 mb-3">
-                  <a>Construct dataset and speech recognition module</a>
+                  <a>Hiring Usability Test Participants – Flyer and Screener</a>
                 </div>
 
                 <div>
                   <div class="mt-3 mb-3">
                     <div class="t-tl-3">
-                      <a>Dataset Construction</a>
+                      <a>Flyer</a>
                     </div>
-                    <div class="t-it-1">
-                      <a>The dataset was composed with keywords in Google Speech Commands Datasets, and a customized
-                        keyword.
-                        The customized keyword was generated through Digi-key Python curator by blending self-recorded
-                        keyword audio files with Google Speech Commands Datasets. The self-created audio resources,
-                        which
-                        were 1 second, 16kHz .wav file for each, were recorded by ourselves and managed by Audacity.</a>
-                    </div>
-                  </div>
+                    <b-row>
+                      <b-col xs="4" class="t-it-1">
+                        <ul style="list-style-type: circle">
+                          <li>Introduction – Brief introduction between the client and our team.</li>
+                          <li>Client Project – First understanding of the project – Pixel Paper.</li>
+                          <li>Client Goals – Realize goals our client expected to approach.</li>
+                          <li>Project Scope – Insight the current state of Pixel Paper.</li>
+                          <li>Participant Profile – Target type of participants that our client would like to reach out.
+                          </li>
+                          <li>Company Concerns and Disclosures – Determine consent forms considering client company’s
+                            requirements.
+                          </li>
+                        </ul>
+                      </b-col>
 
-                  <div class="mt-3 mb-3">
+                      <b-col xs="2" style="background-color: lightblue" class="ratio ratio-1x1">
+                        <img :src="mainPic">
+                      </b-col>
+                    </b-row>
                     <div class="t-tl-3">
-                      <a>Speech Recognition Module</a>
+                      <a>Screener</a>
+                    </div>
+                    <div xs="4" class="t-it-1">
+                      <a>A Google form survey that examines participants’ demographics to match the client needs.</a>
+                    </div>
+                  </div>
+                </div>
+
+                <b-row>
+                  <b-col>
+                    <div style="height: 32px;background-color: transparent"></div>
+                  </b-col>
+                </b-row>
+
+                <div class="t-tl-2 mt-3 mb-3">
+                  <a>Heuristic Evaluation</a>
+                </div>
+                <div class="mb-3">
+                  <div class="t-it-1">
+                    <a>By going through Heuristic Evaluation, several issues were concluded (main issues listed
+                      here):</a>
+                    <ul style="list-style-type: decimal">
+                      <li>External Consistency</li>
+                      <li>Widgets And Labels Near Targets</li>
+                      <li>Frequently Used Functions Optimized</li>
+                      <li>Frequently Used Functions Optimized</li>
+                      <li>Speak The User’s Language</li>
+                      <li>Perceptibility Of Feedback</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <b-row>
+                  <b-col>
+                    <div style="height: 32px;background-color: transparent"></div>
+                  </b-col>
+                </b-row>
+
+                <div class="t-tl-2 mt-3 mb-3">
+                  <a>Test Plan and Materials</a>
+                </div>
+
+                <b-row>
+                  <b-col xs="4" class="mb-3">
+                    <div class="t-tl-3 mt-3">
+                      <a>Test Plan</a>
                     </div>
                     <div class="t-it-1">
-                      <a>Edge Impulse, a no-code machine learning web system, was selected to construct the speech
-                        recognition module. First, an audio Edge Impulse project was created and all the prepared
-                        keyword
-                        datasets were uploaded to the data acquisition in folder-base batches. Next, the impulse was
-                        created
-                        with parameters: 16 kHz frequency, MFCC type, and Keras classifier. The classifier was then
-                        trained
-                        with default MFCC and classifier parameters. 73.7% accuracy was obtained after the module was
-                        trained.</a>
+                      <a>A test plan report was constructed to determine the preparation of process and contents of the
+                        usability test.</a>
                     </div>
+                    <div class="t-tl-3 mt-3">
+                      <a>Test Materials</a>
+                    </div>
+                    <div class="t-it-1">
+                      <a>A test materials report to list forms, questionnaires, and materials to be used in the
+                        usability
+                        test.</a>
+                    </div>
+
+                  </b-col>
+
+                  <b-col xs="2" style="background-color: lightblue" class="ratio ratio-1x1">
+                    <img :src="mainPic">
+                  </b-col>
+                </b-row>
+
+                <b-row>
+                  <b-col>
+                    <div style="height: 32px;background-color: transparent"></div>
+                  </b-col>
+                </b-row>
+
+                <div class="t-tl-2 mt-3 mb-3">
+                  <a>Pilot Test</a>
+                </div>
+                <div class="mb-3">
+                  <div class="t-it-1">
+                    <a>A pilot test was launched to examine the completeness of the test plan before testing with
+                      participants. Several issues were found to be improved.</a>
+                    <ul style="list-style-type: circle">
+                      <li>The participant might need to be reminded about the ‘Think out loud’ action.</li>
+                      <li>The system was unstable since it was a Hi-fi prototype.</li>
+                    </ul>
                   </div>
                 </div>
 
                 <div class="t-tl-2 mt-3 mb-3">
-                  <a>Build speech recognition on Raspberry Pi server</a>
+                  <a>Usability Test</a>
                 </div>
-                <div class="mt-3 mb-3">
-                  <div class="t-tl-3">
-                    <a>Raspberry Pi Server</a>
+                <div class="mb-3">
+                  <div class="t-it-1 mb-3">
+                    <a>A usability test was launched to ...</a>
                   </div>
-                  <div class="t-it-1">
-                    <a>Raspberry Pi was used to run the Python server script. The speech recognition module in Edge
-                      Impulse
-                      could be downloaded as a .eim file to Raspberry Pi by Edge-Impulse-Linux-Runner. Then, the impulse
-                      could be imported into the Python code with functions available. In the Python script, the
-                      Logitech
-                      webcam with a built-in microphone was used as input, and speech recognition results would be
-                      returned
-                      from classifier functions. A list of similarity rates for each keyword labels would be returned
-                      and
-                      the keyword with rates over 0.6 would be identified.
 
-                      With the identification of the user input, we could connect with the client-side Python code with
-                      socket communication to complete the task of moving and clicking the cursor. A white LED was
-                      connected
-                      to GPIO 26 port to provide current status of the server.</a>
-                  </div>
+                  <b-row class="justify-content-center mb-3">
+                    <b-col col md="8" style="background-color: lightblue" class="ratio-16x9">
+                      <img :src="mainPic" style="width: 100%">
+                    </b-col>
+                  </b-row>
                 </div>
 
                 <div class="t-tl-2 mt-3 mb-3">
-                  <a>Build cursor control client</a>
-                </div>
-                <div class="mt-3 mb-3">
-                  <div class="t-it-1">
-                    <a>This client was constructed with Python script and run on the other device to communicate with
-                      the server-end and to manipulate the cursor on this device. When the client receives the
-                      triggering command, which is the customized keyword, the grids, generated by Tkinter, would
-                      display and cover the screen. The grids function as references for the user to decide the
-                      destination to move the cursor. After the user select the destination, the cursor would be moved
-                      to the target place and click, using Pyautogui, which could simulate mouse actions with
-                      Python.</a>
-                  </div>
+                  <a>Results</a>
                 </div>
 
+                <div class="t-it-1">
+                  <a>Improvements that we suggested after the usability tests:</a>
+                </div>
+                <div class="t-tl-3 mt-3">
+                  <a>Design</a>
+                </div>
+                <div class="t-it-1">
+                  <ul>
+                    <li>Improve the completeness of the interaction.</li>
+                    <li>Message looks like email page instead of chat page, and not maintain consistency with similar
+                      products.
+                    </li>
+                    <li>Dashboard more looks like the home page.</li>
+                  </ul>
+                </div>
+
+                <div class="t-tl-3 mt-3">
+                  <a>Functionality</a>
+                </div>
+                <div class="t-it-1">
+                  <a>Participants features interest: Dark mode, Due date</a>
+                </div>
+
+                <div class="t-tl-3 mt-3">
+                  <a>Future Study</a>
+                </div>
+                <div class="t-it-1">
+                  <ul>
+                    <li>Testing the usability of the app version for iOS platform.</li>
+                    <li>Test under different environments.
+                      <ul>
+                        <li>Visibility under different ambient lights</li>
+                        <li>Usability under various using condition (like standing, walking, etc)</li>
+                      </ul>
+                    </li>
+                    <li>If the system could be developed into a more complete version, more detail tests could be done:
+                      <ul>
+                        <li>Free to search and browse papers, and add to collections</li>
+                        <li>Create actual documents or files in the Locker</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
             </div>
           </b-row>
 
-          <b-row>
-            <div style="height: 60px;background-color: transparent">
-            </div>
-          </b-row>
-
-          <b-row>
-            <div style="background-color: transparent">
-              <div class="t-tl-1">
-                <a>Demo Video</a>
-              </div>
-              <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                video
-              </div>
-              <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                video
-              </div>
-
-            </div>
-          </b-row>
-
-
-          <b-row>
-            <div style="height: 180px;background-color: transparent">
-            </div>
-          </b-row>
 
         </b-col>
       </b-row>
@@ -266,14 +349,14 @@
     <b-container fluid>
       <b-row>
         <!--blank-->
-        <div style="height: 80px;background-color: lavender"></div>
+        <div style="height: 80px;background-color: transparent"></div>
       </b-row>
 
       <b-row class="justify-content-center">
         <b-col xl="6">
           <b-row>
             <!--Copyright-->
-            <div style="height: 60px;background-color: transparent"></div>
+            <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
           </b-row>
         </b-col>
       </b-row>
@@ -288,7 +371,7 @@
     name: 'PixelPaper',
     data() {
       return {
-        mainPic: require('@/assets/img/IMG_1745.jpg'),
+        mainPic: require('@/assets/img/IMG_0322.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {
@@ -299,15 +382,15 @@
         motivateInfos: [{
           id: 0,
           title: 'Prompt',
-          sentence: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
+          sentence: 'Evaluate usability and user experience for our customer – Pixel Paper.'
         }, {
           id: 1,
           title: 'Problem',
-          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
+          sentence: 'Is Pixel Paper usable enough for students with/without experience using online course system?'
         }, {
           id: 2,
           title: 'Solution',
-          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
+          sentence: 'By going through the Heuristic Evaluation and usability test, issues were concluded for Pixel Paper to consider improving.'
         }],
         intro: {
           title: 'Introduction',
