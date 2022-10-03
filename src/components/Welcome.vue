@@ -13,8 +13,10 @@
         <b-col xl="1"></b-col>
         <b-col xl="3" align-self="center">
           <div class="t-tl-1">
-            <a>Hi, I'm Jen-I Wang.</a>
-            <p>A UI developer / UX researcher / Front-end developer</p>
+            <p>Hi, I'm Jen-I Wang, a</p>
+            <p>UI developer / </p>
+            <p>UX researcher /</p>
+            <p>Front-end developer</p>
           </div>
         </b-col>
         <b-col xl="3" align-self="center">
@@ -155,7 +157,7 @@
 
 <script>
   export default {
-    name: 'CatchCursor',
+    name: 'Welcome',
     data() {
       return {
         mainPic: require('@/assets/img/IMG_0601.jpg'),

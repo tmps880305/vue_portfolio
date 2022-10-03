@@ -3,31 +3,25 @@
 
     <!--Page 1-->
     <b-container fluid style="height: 90vh">
-      <b-row class="mb-3 justify-content-center">
-        <b-col xl="8">
-          <div class="ratio ratio-16x9">
-            <img :src="mainPic">
-          </div>
+      <b-row>
+        <b-col>
+          <div style="height: 60px;background-color: transparent"></div>
+          <div style="height: 80px;background-color: transparent"></div>
         </b-col>
       </b-row>
 
-      <b-row cols="3" class="justify-content-center">
-        <b-col xl="2" style="background-color: transparent; text-align: center" v-for="mainInfo in mainInfos"
-               v-bind:data="mainInfo" v-bind:key="mainInfo.title">
+      <b-row class="justify-content-center">
+        <b-col xl="1"></b-col>
+        <b-col xl="3" align-self="center">
           <div class="t-tl-1">
-            <a>{{mainInfo.title}}</a>
+            <p>Hi, I'm Jen-I Wang, a</p>
+            <p>UI developer / </p>
+            <p>UX researcher /</p>
+            <p>Front-end developer</p>
           </div>
-
-          <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
-            <a v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">{{item}}<br></a>
-          </div>
-          <div v-else-if="mainInfo.id ===2">
-            <b-row class="justify-content-center">
-              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">
-                <img :src="require('@/assets/img/draft/tool_icon/'+item)" style="width: 40px">
-              </b-col>
-            </b-row>
-          </div>
+        </b-col>
+        <b-col xl="3" align-self="center">
+          <img :src="require('@/assets/img//self.jpg')" style="width: 100%">
         </b-col>
       </b-row>
     </b-container>
@@ -287,7 +281,7 @@
 
 <script>
   export default {
-    name: 'CatchCursor',
+    name: 'About',
     data() {
       return {
         mainPic: require('@/assets/img/IMG_0601.jpg'),
