@@ -24,7 +24,7 @@
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
               <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">
-                <img :src="require('@/assets/img/something/'+item)" style="width: 30px">
+                <img :src="require('@/assets/img/draft/tool_icon/'+item)" style="width: 40px">
               </b-col>
             </b-row>
           </div>
@@ -288,13 +288,13 @@
     name: 'ZoomRedesign',
     data() {
       return {
-        mainPic: require('@/assets/img/IMG_1745.jpg'),
+        mainPic: require('@/assets/img/IMG_2627.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {
           id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
         }, {
-          id: 2, title: 'Tools', items: ['cross.jpg', 'cross.jpg', 'cross.jpg', 'cross.jpg']
+          id: 2, title: 'Tools', items: ['figma.png', 'mirro.png', 'sketch.png', 'java.png']
         }],
         motivateInfos: [{
           id: 0,

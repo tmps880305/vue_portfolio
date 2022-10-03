@@ -26,8 +26,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'CatchCursor',
-      component: CatchCursor
+      name: 'Welcome',
+      component: Welcome
     },
     {
       path: '/about',
@@ -40,16 +40,16 @@ export default new Router({
       component: Coffee
     },
     {
-      path: '/zoomRedesign',
+      path: '/zoomredesign',
       name: 'ZoomRedesign',
       component: ZoomRedesign
     },{
-      path: '/pixelPaper',
+      path: '/pixelpaper',
       name: 'PixelPaper',
       component: PixelPaper
     },
     {
-      path: '/catchCursor',
+      path: '/catchcursor',
       name: 'CatchCursor',
       component: CatchCursor
     },

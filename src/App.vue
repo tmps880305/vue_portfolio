@@ -5,11 +5,11 @@
 
       <div class="mybarcontainer">
         <router-link class="navLogo" to="/">&nbsp;</router-link>
-        <router-link class="navButFar" to="/pixelPaper">PHOTO</router-link>
+        <router-link class="navButFar" to="/pixelpaper">PHOTO</router-link>
         <router-link class="navBut" to="/coffee">COFFEE</router-link>
-        <router-link class="navButLong" to="/zoomRedesign">SNOWBOARD</router-link>
-        <router-link class="navBut" to="/CatchCursor">WORKS</router-link>
-        <router-link class="navBut" to="/">ABOUT</router-link>
+        <router-link class="navButLong" to="/zoomredesign">SNOWBOARD</router-link>
+        <router-link class="navBut" to="/catchcursor">WORKS</router-link>
+        <router-link class="navBut" to="/about">ABOUT</router-link>
       </div>
       <!--<div class="myCopyright" align="center">-->
         <!--<div>-->
