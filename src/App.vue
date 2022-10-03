@@ -4,23 +4,21 @@
       <b-row style="height: 80px;background-color: white;" align-v="center">
         <b-col xl="3"></b-col>
         <b-col xl="3">
-          <div>
-            <img style="cursor: pointer;height: 60px;width: 60px;align-self: center" :src="logo" @click="home()">
-          </div>
+            <img style="margin-left:30px;cursor: pointer;height: 40px;width: 40px;" :src="logo" @click="home()">
         </b-col>
         <b-col xl="3">
-          <b-row align-h="end" align-v="center">
+          <b-row align-h="end">
             <b-col>
-              <router-link class="navBut2" style="margin-left: 0px" to="/pixelpaper">PHOTO</router-link>
+              <router-link class="navButton" to="/pixelpaper">PIXEL</router-link>
             </b-col>
             <b-col>
-              <router-link class="navBut2" to="/zoomredesign">SNOW</router-link>
+              <router-link class="navButton" to="/zoomredesign">ZOOM</router-link>
             </b-col>
             <b-col>
-              <router-link class="navBut2" to="/catchcursor">WORKS</router-link>
+              <router-link class="navButton" to="/catchcursor">CATCH</router-link>
             </b-col>
             <b-col>
-              <router-link class="navBut2" to="/about">ABOUT</router-link>
+              <router-link class="navButton" to="/about">ABOUT</router-link>
             </b-col>
           </b-row>
         </b-col>
@@ -62,12 +60,8 @@
 </style>
 
 <style scoped>
-  @import './assets/css/bar.css';
 
-  .navBut2 {
-    width: 100px;
-    height: 60px;
-    /*margin-left: 30px;*/
+  .navButton {
     background-color: white;
     font-family: 'Nunito Sans', 'sans-serif';
     font-size: 16px;
