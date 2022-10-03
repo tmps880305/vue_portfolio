@@ -27,7 +27,7 @@
         <b-col>
           <b-row align-h="end">
             <img style="cursor: pointer;height: 60px;width:60px;align-self: end"
-                 :src="require('@/assets/img/something/arrow.png')" @click="home()">
+                 :src="require('./assets/img/something/arrow.png')" @click="home()">
           </b-row>
         </b-col>
       </b-row>
@@ -41,9 +41,9 @@
     name: 'App',
     data() {
       return {
-        crProto: require('@/assets/img/copyright/copyrightsProto.png'),
-        crSnowphfee: require('@/assets/img/copyright/CopyrightSnowphfee.png'),
-        logo: require('@/assets/img/logo.png'),
+        crProto: require('./assets/img/copyright/copyrightsProto.png'),
+        crSnowphfee: require('./assets/img/copyright/CopyrightSnowphfee.png'),
+        logo: require('./assets/img/logo.png'),
       }
     },
     methods: {

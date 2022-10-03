@@ -20,7 +20,7 @@
           </div>
         </b-col>
         <b-col xl="3" align-self="center">
-          <img :src="require('@/assets/img/draft/Self_draft.png')" style="width: 100%">
+          <img :src="require('../assets/img/draft/Self_draft.png')" style="width: 100%">
         </b-col>
       </b-row>
     </b-container>
@@ -160,7 +160,7 @@
     name: 'Welcome',
     data() {
       return {
-        mainPic: require('@/assets/img/IMG_0601.jpg'),
+        mainPic: require('../assets/img/IMG_0601.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {
@@ -185,7 +185,7 @@
           title: 'Introduction',
           content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        process: {title: 'Process', img: require('@/assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
       }
     },
     methods: {},

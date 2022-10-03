@@ -65,13 +65,13 @@
     name: 'ArticleWorkAssign',
     data() {
       return {
-        toSeeMore: require('@/assets/img/toSeeMore.png'),
-        topPic: require('@/assets/img/works/personalWebsite/topPic.jpg'),
-        artPic1: require('@/assets/img/works/personalWebsite/designProcess.jpg'),
-        picDesProc: require('@/assets/img/works/personalWebsite/designProcess.jpg'),
-        picWireframe: require('@/assets/img/works/personalWebsite/wireframe.png'),
-        picPrototype: require('@/assets/img/works/personalWebsite/prototype.png'),
-        goBack: require('@/assets/img/goback.png'),
+        toSeeMore: require('../assets/img/toSeeMore.png'),
+        topPic: require('../assets/img/works/personalWebsite/topPic.jpg'),
+        artPic1: require('../assets/img/works/personalWebsite/designProcess.jpg'),
+        picDesProc: require('../assets/img/works/personalWebsite/designProcess.jpg'),
+        picWireframe: require('../assets/img/works/personalWebsite/wireframe.png'),
+        picPrototype: require('../assets/img/works/personalWebsite/prototype.png'),
+        goBack: require('../assets/img/goback.png'),
       }
     },
     methods: {

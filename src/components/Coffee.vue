@@ -21,18 +21,18 @@
       return {
         mainPic: {
           id: '0',
-          img: require('@/assets/img/IMG_0601.jpg'),
+          img: require('../assets/img/IMG_0601.jpg'),
           topic: 'Traveling Boracay',
           subTopic: 'secret beach behind the island',
           artiLink: '/artiPhoto/mainPic'
         },
         toSeeMore: '/img/toSeeMore.png',
-        background: require('@/assets/img/IMG_2627_2.jpg'),
+        background: require('../assets/img/IMG_2627_2.jpg'),
         item: {
-          syphon: require('@/assets/img/coffee/syphon.png'),
-          aeropress: require('@/assets/img/coffee/aeropress.png'),
-          barista: require('@/assets/img/coffee/barista.png'),
-          handdrip: require('@/assets/img/coffee/handdrip.png')
+          syphon: require('../assets/img/coffee/syphon.png'),
+          aeropress: require('../assets/img/coffee/aeropress.png'),
+          barista: require('../assets/img/coffee/barista.png'),
+          handdrip: require('../assets/img/coffee/handdrip.png')
         },
       }
     },

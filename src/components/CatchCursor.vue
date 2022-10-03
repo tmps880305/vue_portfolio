@@ -19,12 +19,12 @@
           </div>
 
           <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
-            <a v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">{{item}}<br></a>
+            <a v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item.id">{{item}}<br></a>
           </div>
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
-              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">
-                <img :src="require('@/assets/img/draft/tool_icon/'+item)" style="width: 40px">
+              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item.id">
+                <img :src="require('../assets/img/draft/tool_icon/'+item)" style="width: 40px">
               </b-col>
             </b-row>
           </div>
@@ -46,7 +46,7 @@
 
       <b-row class="justify-content-center">
         <b-col xl="3" align-self="center">
-          <div v-for="mtvInfo in motivateInfos" v-bind:data="mtvInfo" v-bind:key="mtvInfo"
+          <div v-for="mtvInfo in motivateInfos" v-bind:data="mtvInfo" v-bind:key="mtvInfo.id"
                style="background-color: transparent;">
             <div class="mb-3">
               <div class="t-it-1">{{mtvInfo.title}}</div>
@@ -290,7 +290,7 @@
     name: 'CatchCursor',
     data() {
       return {
-        mainPic: require('@/assets/img/IMG_0601.jpg'),
+        mainPic: require('../assets/img/IMG_0601.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {
@@ -315,7 +315,7 @@
           title: 'Introduction',
           content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        process: {title: 'Process', img: require('@/assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
       }
     },
     methods: {},

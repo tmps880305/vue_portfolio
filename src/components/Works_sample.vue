@@ -24,7 +24,7 @@
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
               <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item">
-                <img :src="require('@/assets/img/something/'+item)" style="width: 30px">
+                <img :src="require('../assets/img/something/'+item)" style="width: 30px">
               </b-col>
             </b-row>
           </div>
@@ -288,7 +288,7 @@
     name: 'Works_sample',
     data() {
       return {
-        mainPic: require('@/assets/img/IMG_0601.jpg'),
+        mainPic: require('../assets/img/IMG_0601.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {
@@ -313,7 +313,7 @@
           title: 'Introduction',
           content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        process: {title: 'Process', img: require('@/assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
       }
     },
     methods: {},

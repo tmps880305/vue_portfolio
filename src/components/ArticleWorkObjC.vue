@@ -95,17 +95,17 @@
       return {
         mainPic: {
           id: '0',
-          img: require('@/assets/img/IMG_0601.jpg'),
+          img: require('../assets/img/IMG_0601.jpg'),
           topic: 'Traveling Boracay',
           subTopic: 'secret beach behind the island',
           artiLink: '/artiPhoto/mainPic'
         },
-        toSeeMore: require('@/assets/img/toSeeMore.png'),
-        topPic: require('@/assets/img/works/objectivec/objTopPic.jpg'),
-        artPic1: require('@/assets/img/works/objectivec/storyboard.png'),
-        appVideo: require('@/assets/img/works/objectivec/objC_datastru.mp4'),
-        xButton: require('@/assets/img/something/arrow.png'),
-        goBack: require('@/assets/img/goback.png'),
+        toSeeMore: require('../assets/img/toSeeMore.png'),
+        topPic: require('../assets/img/works/objectivec/objTopPic.jpg'),
+        artPic1: require('../assets/img/works/objectivec/storyboard.png'),
+        appVideo: require('../assets/img/works/objectivec/objC_datastru.mp4'),
+        xButton: require('../assets/img/something/arrow.png'),
+        goBack: require('../assets/img/goback.png'),
         mShow: false
       }
     },

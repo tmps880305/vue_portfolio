@@ -89,35 +89,35 @@
       return {
         mainPic: {
           id: '0',
-          img: require('@/assets/img/IMG_0601.jpg'),
+          img: require('../assets/img/IMG_0601.jpg'),
           topic: 'Traveling Boracay',
           subTopic: 'secret beach behind the island',
           artiLink: '/artiPhoto/mainPic'
         },
-        toSeeMore: require('@/assets/img/toSeeMore.png'),
+        toSeeMore: require('../assets/img/toSeeMore.png'),
         subPics: [{
           id: '1',
-          img: require('@/assets/img/IMG_4723.jpg'),
+          img: require('../assets/img/IMG_4723.jpg'),
           topic: 'Natural Park in Nanto',
           subTopic: 'white piano in the lake',
           artiLink: '/artiPhoto/nanto'
         }, {
           id: '2',
-          img: require('@/assets/img/IMG_5261.jpg'),
+          img: require('../assets/img/IMG_5261.jpg'),
           topic: 'Autumn Trip in Japan',
           subTopic: 'maple dancing in Karuisawa',
           artiLink: '/artiPhoto/karuisawa'
         },
           {
             id: '3',
-            img: require('@/assets/img/IMG_4960.jpg'),
+            img: require('../assets/img/IMG_4960.jpg'),
             topic: 'Forgotton Forest',
             subTopic: 'floating on misery lake',
             artiLink: '/artiPhoto/forgotten'
           },
           {
             id: '4',
-            img: require('@/assets/img/IMG_5608.jpg'),
+            img: require('../assets/img/IMG_5608.jpg'),
             topic: 'Snowboarding Niseko',
             subTopic: 'cozy coffee cabin',
             artiLink: '/artiPhoto/niseko'
