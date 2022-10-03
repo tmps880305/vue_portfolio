@@ -27,7 +27,7 @@
         <b-col>
           <b-row align-h="end">
             <img style="cursor: pointer;height: 60px;width:60px;align-self: end"
-                 :src="require('./assets/img/something/arrow.png')" @click="home()">
+                 :src="require('./assets/img/something/arrow.png')" @click="scrollToTop()">
           </b-row>
         </b-col>
       </b-row>
@@ -49,6 +49,9 @@
     methods: {
       home() {
         this.$router.push("/")
+      },
+      scrollToTop() {
+        window.scrollTo(0,0);
       }
     }
   }
