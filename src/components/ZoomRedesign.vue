@@ -23,8 +23,11 @@
           </div>
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
-              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item.id">
-                <img :src="require('../assets/img/draft/tool_icon/'+item)" style="width: 40px">
+              <b-col cols="3" v-for="item in mainInfo.items" v-bind:data="item"
+                     v-bind:key="item.id">
+                <div style="height: 60px">
+                  <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
+                </div>
               </b-col>
             </b-row>
           </div>
@@ -288,7 +291,7 @@
     name: 'ZoomRedesign',
     data() {
       return {
-        mainPic: require('../assets/img/IMG_2627.jpg'),
+        mainPic: require('../assets/img/works/zoomredesign/ZoomRedesign_main.jpg'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
         }, {

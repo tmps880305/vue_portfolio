@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <b-container fluid style="height: 90vh;position: fixed;z-index: 10">
+    <!--<b-container fluid style="position: fixed;z-index: 10">-->
       <b-row style="height: 80px;background-color: white;" align-v="center">
         <b-col xl="3"></b-col>
         <b-col xl="3">
-            <img style="margin-left:30px;cursor: pointer;height: 40px;width: 40px;" :src="logo" @click="home()">
+            <img style="margin-left:30px;cursor: pointer;height: 50px;width: 50px;" :src="logo" @click="home()">
         </b-col>
         <b-col xl="3">
           <b-row align-h="end">
@@ -43,7 +44,7 @@
       return {
         crProto: require('./assets/img/copyright/copyrightsProto.png'),
         crSnowphfee: require('./assets/img/copyright/CopyrightSnowphfee.png'),
-        logo: require('./assets/img/logo.png'),
+        logo: require('./assets/img/logo.jpg'),
       }
     },
     methods: {

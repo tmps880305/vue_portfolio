@@ -3,8 +3,8 @@
 
     <!--Page 1-->
     <b-container fluid style="height: 90vh">
-      <b-row class="mb-3 justify-content-center">
-        <b-col xl="8">
+      <b-row class="mb-3" align-h="center">
+        <b-col xl="8" align-h="center">
           <div class="ratio ratio-16x9">
             <img :src="mainPic">
           </div>
@@ -23,8 +23,11 @@
           </div>
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
-              <b-col cols="2" v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item.id">
-                <img :src="require('../assets/img/draft/tool_icon/'+item)" style="width: 40px">
+              <b-col cols="3" v-for="item in mainInfo.items" v-bind:data="item"
+                     v-bind:key="item.id">
+                <div style="height: 60px">
+                  <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
+                </div>
               </b-col>
             </b-row>
           </div>
