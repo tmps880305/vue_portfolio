@@ -166,7 +166,7 @@
         }, {
           id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
         }, {
-          id: 2, title: 'Tools', items: ['figma.png', 'mirro.png', 'sketch.png', 'java.png']
+          id: 2, title: 'Tools', items: ['figma.png', 'miro.png', 'sketch.png', 'java.png']
         }],
         motivateInfos: [{
           id: 0,

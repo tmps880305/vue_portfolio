@@ -38,7 +38,7 @@
       </b-row>
       <!---->
 
-      <b-row class="justify-content-center" v-for="about in abouts" v-bind:data="about" v-bind:key="about.title">
+      <b-row class="justify-content-center" v-for="about in abouts" :data="about" :key="about.title">
 
         <b-col v-if="about.loc=='left'" xl="2" align-self="center">
           <div class="ratio ratio-1x1">

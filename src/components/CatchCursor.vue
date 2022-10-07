@@ -13,18 +13,18 @@
 
       <b-row cols="3" class="justify-content-center">
         <b-col xl="2" style="background-color: transparent; text-align: center" v-for="mainInfo in mainInfos"
-               v-bind:data="mainInfo" v-bind:key="mainInfo.title">
+               :data="mainInfo" :key="mainInfo.title">
           <div class="t-tl-1">
             <a>{{mainInfo.title}}</a>
           </div>
 
           <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
-            <a v-for="item in mainInfo.items" v-bind:data="item" v-bind:key="item.id">{{item}}<br></a>
+            <a v-for="item in mainInfo.items" :data="item" :key="item.id">{{item}}<br></a>
           </div>
           <div v-else-if="mainInfo.id ===2">
             <b-row class="justify-content-center">
-              <b-col cols="3" v-for="item in mainInfo.items" v-bind:data="item"
-                     v-bind:key="item.id">
+              <b-col cols="3" v-for="item in mainInfo.items" :data="item"
+                     :key="item.id">
                 <div style="height: 60px">
                   <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
                 </div>
@@ -49,7 +49,7 @@
 
       <b-row class="justify-content-center">
         <b-col xl="3" align-self="center">
-          <div v-for="mtvInfo in motivateInfos" v-bind:data="mtvInfo" v-bind:key="mtvInfo.id"
+          <div v-for="mtvInfo in motivateInfos" :data="mtvInfo" :key="mtvInfo.id"
                style="background-color: transparent;">
             <div class="mb-3">
               <div class="t-it-1">{{mtvInfo.title}}</div>
@@ -299,7 +299,7 @@
         }, {
           id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
         }, {
-          id: 2, title: 'Tools', items: ['figma.png', 'mirro.png', 'sketch.png', 'java.png']
+          id: 2, title: 'Tools', items: ['figma.png', 'miro.png', 'sketch.png', 'java.png']
         }],
         motivateInfos: [{
           id: 0,
