@@ -411,45 +411,6 @@
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Merienda|Niconne|Nunito+Sans|Romanesco&display=swap');
-  @import './../assets/css/works.css';
-  @import './../assets/css/imgHover.css';
-
-
-  .t-tl-1 {
-    font-family: 'Nunito Sans', 'sans-serif';
-    font-size: 30px;
-    /*letter-spacing: 2px;*/
-    color: #000000;
-    padding-bottom: 8px;
-  }
-
-  .t-tl-2 {
-    font-family: 'Nunito Sans', 'sans-serif';
-    font-size: 24px;
-    /*letter-spacing: 2px;*/
-    color: #000000;
-  }
-
-  .t-tl-3 {
-    font-family: 'Nunito Sans', 'sans-serif';
-    font-size: 18px;
-    font-weight: bolder;
-    /*letter-spacing: 2px;*/
-    color: #000000;
-  }
-
-  .t-it-1 {
-    font-family: 'Nunito Sans', 'sans-serif';
-    font-size: 18px;
-    /*letter-spacing: 2px;*/
-    color: #000000;
-  }
-
-  .t-it-2 {
-    font-family: 'Nunito Sans', 'sans-serif';
-    font-size: 22px;
-    /*letter-spacing: 2px;*/
-    color: #000000;
-  }
+  @import './../assets/css/text.css';
 
 </style>
