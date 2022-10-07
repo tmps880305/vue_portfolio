@@ -130,7 +130,13 @@
                 <a>Approach</a>
               </div>
 
-              <div>
+              <b-row class="justify-content-center mt-3 mb-3">
+                <b-col col md="8">
+                  <img :src="workflowPic">
+                </b-col>
+              </b-row>
+
+              <b-row class="mt-3 mb-3">
                 <div class="t-it-1">
                   <ul style="list-style-type: decimal">
                     <li>Receiving speech input from the user</li>
@@ -138,28 +144,31 @@
                     <li>Build speech recognition on Raspberry Pi server</li>
                     <li>Build cursor control client</li>
                   </ul>
-                  <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                    image
+                </div>
+
+                <!--Receive speech input-->
+                <b-row class="mt-3 mb-3">
+                  <div class="t-tl-2 mb-3">
+                    <a>Receiving speech input from the user</a>
                   </div>
-                </div>
 
-                <div class="t-tl-2 mt-3">
-                  <a>Receiving speech input from the user</a>
-                </div>
+                  <b-row class="t-it-1 mb-3">
+                    <a>A Logitech C310 HD Webcam with built-in microphone is used to receive speech input from the user
+                      since the built-in microphone supports 16000 Hz sampling rate which matched settings of the
+                      dataset
+                      and speech recognition module. The webcam is connected to the Raspberry Pi through USB port and
+                      would be run by Python codes when the system launched.
+                    </a>
+                  </b-row>
+                </b-row>
 
-                <div class="t-it-1 mb-3">
-                  <a>A Logitech C310 HD Webcam with built-in microphone is used to receive speech input from the user
-                    since the built-in microphone supports 16000 Hz sampling rate which matched settings of the dataset
-                    and speech recognition module. The webcam is connected to the Raspberry Pi through USB port and
-                    would be run by Python codes when the system launched.
-                  </a>
-                </div>
-                <div class="t-tl-2 mt-3 mb-3">
-                  <a>Construct dataset and speech recognition module</a>
-                </div>
+                <!--Dataset-->
+                <b-row class="mt-3 mb-3">
+                  <div class="t-tl-2 mb-3">
+                    <a>Construct dataset and speech recognition module</a>
+                  </div>
 
-                <div>
-                  <div class="mt-3 mb-3">
+                  <b-row class="mb-3">
                     <div class="t-tl-3">
                       <a>Dataset Construction</a>
                     </div>
@@ -169,70 +178,87 @@
                         The customized keyword was generated through Digi-key Python curator by blending self-recorded
                         keyword audio files with Google Speech Commands Datasets. The self-created audio resources,
                         which
-                        were 1 second, 16kHz .wav file for each, were recorded by ourselves and managed by Audacity.</a>
+                        were 1 second, 16kHz .wav file for each, were recorded by ourselves and managed by
+                        Audacity.</a>
                     </div>
-                  </div>
+                  </b-row>
 
-                  <div class="mt-3 mb-3">
+                  <!--Edge Impulse-->
+                  <b-row class="mb-3">
                     <div class="t-tl-3">
                       <a>Speech Recognition Module</a>
                     </div>
                     <div class="t-it-1">
-                      <a>Edge Impulse, a no-code machine learning web system, was selected to construct the speech
-                        recognition module. First, an audio Edge Impulse project was created and all the prepared
-                        keyword
-                        datasets were uploaded to the data acquisition in folder-base batches. Next, the impulse was
-                        created
-                        with parameters: 16 kHz frequency, MFCC type, and Keras classifier. The classifier was then
-                        trained
-                        with default MFCC and classifier parameters. 73.7% accuracy was obtained after the module was
-                        trained.</a>
+                      <a><img :src="edgeLogo" style="height: 26px">, a no-code machine learning web system, was selected
+                        to construct the speech recognition module. First, an audio Edge Impulse project was created and
+                        all the prepared keyword datasets were uploaded to the data acquisition in folder-base batches.
+                        Next, the impulse was created with parameters: 16 kHz frequency, MFCC type, and Keras
+                        classifier. The classifier was then trained with default MFCC and classifier parameters. 73.7%
+                        accuracy was obtained after the module was trained.</a>
                     </div>
-                  </div>
-                </div>
 
-                <div class="t-tl-2 mt-3 mb-3">
-                  <a>Build speech recognition on Raspberry Pi server</a>
-                </div>
-                <div class="mt-3 mb-3">
-                  <div class="t-tl-3">
-                    <a>Raspberry Pi Server</a>
-                  </div>
-                  <div class="t-it-1">
-                    <a>Raspberry Pi was used to run the Python server script. The speech recognition module in Edge
-                      Impulse
-                      could be downloaded as a .eim file to Raspberry Pi by Edge-Impulse-Linux-Runner. Then, the impulse
-                      could be imported into the Python code with functions available. In the Python script, the
-                      Logitech
-                      webcam with a built-in microphone was used as input, and speech recognition results would be
-                      returned
-                      from classifier functions. A list of similarity rates for each keyword labels would be returned
-                      and
-                      the keyword with rates over 0.6 would be identified.
+                  </b-row>
+                  <b-row class="justify-content-center mt-3">
+                    <b-col xl="6">
+                      <img :src="edgeAccuracyPic" style="width: 100%">
+                    </b-col>
+                  </b-row>
 
-                      With the identification of the user input, we could connect with the client-side Python code with
-                      socket communication to complete the task of moving and clicking the cursor. A white LED was
-                      connected
-                      to GPIO 26 port to provide current status of the server.</a>
-                  </div>
-                </div>
+                </b-row>
 
-                <div class="t-tl-2 mt-3 mb-3">
-                  <a>Build cursor control client</a>
-                </div>
-                <div class="mt-3 mb-3">
-                  <div class="t-it-1">
-                    <a>This client was constructed with Python script and run on the other device to communicate with
-                      the server-end and to manipulate the cursor on this device. When the client receives the
-                      triggering command, which is the customized keyword, the grids, generated by Tkinter, would
-                      display and cover the screen. The grids function as references for the user to decide the
-                      destination to move the cursor. After the user select the destination, the cursor would be moved
-                      to the target place and click, using Pyautogui, which could simulate mouse actions with
-                      Python.</a>
-                  </div>
-                </div>
 
-              </div>
+                <!--Raspberry server-->
+                <b-row class="mt-3 mb-3">
+                  <div class="t-tl-2 mb-3">
+                    <a>Build speech recognition on Raspberry Pi server</a>
+                  </div>
+                  <b-row class="mb-3">
+                    <div class="t-tl-3">
+                      <a>Raspberry Pi Server</a>
+                    </div>
+                    <div class="t-it-1">
+                      <a><img :src="raspberryPic" style="height: 30px">Raspberry Pi was used to run the Python server
+                        script. The speech recognition module in Edge Impulse could be downloaded as a .eim file to
+                        Raspberry Pi by Edge-Impulse-Linux-Runner. Then, the impulse could be imported into the Python
+                        code with functions available. In the Python script, the Logitech webcam with a built-in
+                        microphone was used as input, and speech recognition results would be returned from classifier
+                        functions. A list of similarity rates for each keyword labels would be returned and the keyword
+                        with rates over 0.6 would be identified. With the identification of the user input, we could
+                        connect with the client-side Python code with socket communication to complete the task of
+                        moving and clicking the cursor. A white LED was connected to GPIO 26 port to provide current
+                        status of the server.</a>
+                    </div>
+
+                  </b-row>
+                </b-row>
+
+                <!--Client-->
+                <b-row class="mt-3 mb-3">
+                  <div class="t-tl-2 mb-3">
+                    <a>Build cursor control client</a>
+                  </div>
+                  <b-row class="mb-3">
+                    <div class="t-it-1">
+                      <a>This client was constructed with Python script and run on the other device to communicate with
+                        the server-end and to manipulate the cursor on this device. When the client receives the
+                        triggering command, which is the customized keyword, the grids, generated by Tkinter, would
+                        display and cover the screen. The grids function as references for the user to decide the
+                        destination to move the cursor. After the user select the destination, the cursor would be moved
+                        to the target place and click, using Pyautogui, which could simulate mouse actions with
+                        Python.</a>
+                    </div>
+                    <b-row class="justify-content-center mt-3 mb-3">
+                      <b-col xl="8">
+                        <img :src="clientPic1" style="width: 100%">
+                      </b-col>
+                      <b-col x="2">
+                        <img :src="clientPic2" style="width: 100%">
+                      </b-col>
+                    </b-row>
+                  </b-row>
+                </b-row>
+
+              </b-row>
 
             </div>
           </b-row>
@@ -242,7 +268,8 @@
             </div>
           </b-row>
 
-          <b-row>
+          <!--Demo-->
+          <b-row class="mt-3 mb-3">
             <div style="background-color: transparent">
               <div class="t-tl-1">
                 <a>Demo Video</a>
@@ -256,7 +283,6 @@
 
             </div>
           </b-row>
-
 
           <b-row>
             <div style="height: 180px;background-color: transparent">
@@ -294,12 +320,18 @@
     data() {
       return {
         mainPic: require('../assets/img/IMG_0601.jpg'),
+        workflowPic: require('../assets/img/works/catchcursor/workflow.jpg'),
+        clientPic1: require('../assets/img/works/catchcursor/client_1.jpg'),
+        clientPic2: require('../assets/img/works/catchcursor/client_2.jpg'),
+        edgeLogo: require('../assets/img/works/catchcursor/edgeimpulse_logo.png'),
+        edgeAccuracyPic: require('../assets/img/works/catchcursor/edgeimpulse_accuracy.jpg'),
+        raspberryPic: require('../assets/img/draft/tool_icon/raspberry.png'),
         mainInfos: [{
-          id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
+          id: 0, title: 'Tags', items: ['Prototyping', 'UI/UX Develop', 'IoT Develop', 'Machine Learning']
         }, {
-          id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
+          id: 1, title: 'My Role', items: ['Main Developer', 'UI Developer', 'UX Researcher']
         }, {
-          id: 2, title: 'Tools', items: ['figma.png', 'miro.png', 'sketch.png', 'java.png']
+          id: 2, title: 'Tools', items: ['raspberry.png', 'python.png', 'edgeimpulse.png']
         }],
         motivateInfos: [{
           id: 0,
@@ -316,7 +348,7 @@
         }],
         intro: {
           title: 'Introduction',
-          content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
+          content: 'The application of voice user interfaces in digital devices has been increasing significantly in recent times. Speech has been considered the most naturalistic and convenient way of communicating, thus enabling its use in operating different technological devices has become essential. One of the major motivations to implement it is to provide accessibility for people with motor impairments and disabilities. In this project, we present a model that helps in navigating the mouse and keyboard inputs by voice-based interaction system called ‘Catch-Cursor’ that navigates the cursor through voice commands on the digital screens. The voice commands are obtained using a speech module on Arduino, processed with machine learning on Edge Impulse, and controlled using the PyAutoGUI library on Python.'
         },
         process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
       }
