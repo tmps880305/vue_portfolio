@@ -294,29 +294,19 @@
     </b-container>
 
     <!--Page 5-->
-    <b-container fluid>
-      <b-row>
-        <!--blank-->
-        <div style="height: 80px;background-color: lavender"></div>
-      </b-row>
-
-      <b-row class="justify-content-center">
-        <b-col xl="6">
-          <b-row>
-            <!--Copyright-->
-            <div style="height: 60px;background-color: lightgoldenrodyellow"></div>
-          </b-row>
-        </b-col>
-      </b-row>
-    </b-container>
+    <Copyrights/>
 
   </div>
-
 </template>
 
 <script>
+  import Copyrights from '../components/Copyrights.vue'
+
   export default {
     name: 'CatchCursor',
+    components: {
+      Copyrights
+    },
     data() {
       return {
         mainPic: require('../assets/img/IMG_0601.jpg'),
@@ -326,6 +316,7 @@
         edgeLogo: require('../assets/img/works/catchcursor/edgeimpulse_logo.png'),
         edgeAccuracyPic: require('../assets/img/works/catchcursor/edgeimpulse_accuracy.jpg'),
         raspberryPic: require('../assets/img/draft/tool_icon/raspberry.png'),
+        copyrightPic: require('../assets/img/something/copyright_filled.png'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Prototyping', 'UI/UX Develop', 'IoT Develop', 'Machine Learning']
         }, {
@@ -360,5 +351,6 @@
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Merienda|Niconne|Nunito+Sans|Romanesco&display=swap');
   @import './../assets/css/text.css';
+
 
 </style>

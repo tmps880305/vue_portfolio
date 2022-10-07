@@ -24,11 +24,11 @@
           </b-row>
         </b-col>
       </b-row>
-      <b-row style="height: 90vh;" align-v="end">
+      <b-row style="height: 87vh;" align-v="end">
         <b-col>
           <b-row align-h="end">
-            <img style="cursor: pointer;height: 60px;width:60px;align-self: end"
-                 :src="require('./assets/img/something/arrow.png')" @click="scrollToTop()">
+            <img style="cursor: pointer;height: 45px;width:65px;align-self: end;margin-right: 40px"
+                 :src="backtotop" @click="scrollToTop()">
           </b-row>
         </b-col>
       </b-row>
@@ -42,9 +42,8 @@
     name: 'App',
     data() {
       return {
-        crProto: require('./assets/img/copyright/copyrightsProto.png'),
-        crSnowphfee: require('./assets/img/copyright/CopyrightSnowphfee.png'),
         logo: require('./assets/img/logo.jpg'),
+        backtotop: require('./assets/img/something/back_to_top.png'),
       }
     },
     methods: {

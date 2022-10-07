@@ -358,29 +358,19 @@
     </b-container>
 
     <!--Page 5-->
-    <b-container fluid>
-      <b-row>
-        <!--blank-->
-        <div style="height: 80px;background-color: lavender"></div>
-      </b-row>
-
-      <b-row class="justify-content-center">
-        <b-col xl="6">
-          <b-row>
-            <!--Copyright-->
-            <div style="height: 60px;background-color: transparent"></div>
-          </b-row>
-        </b-col>
-      </b-row>
-    </b-container>
+    <Copyrights/>
 
   </div>
 
 </template>
 
 <script>
+  import Copyrights from '../components/Copyrights.vue'
   export default {
     name: 'ZoomRedesign',
+    components:{
+      Copyrights
+    },
     data() {
       return {
         mainPic: require('../assets/img/works/zoomredesign/ZoomRedesign_main.jpg'),

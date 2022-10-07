@@ -6,11 +6,7 @@ import Coffee from '@/components/Coffee'
 import ZoomRedesign from '@/components/ZoomRedesign'
 import PixelPaper from '@/components/PixelPaper'
 import CatchCursor from '@/components/CatchCursor'
-import Article from '@/components/Article'
-import ArticleWorkMyweb from '@/components/ArticleWorkMyweb'
-import ArticleWorkAssign from '@/components/ArticleWorkAssign'
-import ArticleWorkObjC from '@/components/ArticleWorkObjC'
-import ArticleWorkConLab from '@/components/ArticleWorkConLab'
+import Copyrights from '@/components/Copyrights'
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
@@ -54,29 +50,9 @@ export default new Router({
       component: CatchCursor
     },
     {
-      path: '/article',
-      name: 'Article',
-      component: Article
-    },
-    {
-      path: '/articleWorkMyweb',
-      name: 'ArticleWorkMyweb',
-      component: ArticleWorkMyweb
-    },
-    {
-      path: '/articleWorkAssign',
-      name: 'ArticleWorkAssign',
-      component: ArticleWorkAssign
-    },
-    {
-      path: '/articleWorkObjC',
-      name: 'ArticleWorkObjC',
-      component: ArticleWorkObjC
-    },
-    {
-      path: '/articleWorkConLab',
-      name: 'ArticleWorkConLab',
-      component: ArticleWorkConLab
+      path: '/copyrights',
+      name: 'Copyrights',
+      component: Copyrights
     }
   ]
 })
