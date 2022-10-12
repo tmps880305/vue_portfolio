@@ -61,7 +61,7 @@
 
         <b-col xl="3">
           <div class="ratio" style="--bs-aspect-ratio: 150%">
-            <img :src="mainPic">
+            <img :src="secondPic">
           </div>
         </b-col>
       </b-row>
@@ -367,6 +367,7 @@
     data() {
       return {
         mainPic: require('../assets/img/works/pixelpaper/PixelPaper_main.jpg'),
+        secondPic: require('../assets/img/works/pixelpaper/PixelPaper_second.jpg'),
         flyerPic: require('../assets/img/works/pixelpaper/Flyer.jpg'),
         UsabilityTestPic: require('../assets/img/works/pixelpaper/UsabilityTest.jpg'),
         mainInfos: [{
@@ -393,7 +394,7 @@
           title: 'Introduction',
           content: 'Pixel Paper is an education system prototype which provides online learning resources, including functions like: Library, Dashboard, Bookshelf, Locker, Messages, and Help.'
         },
-        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
       }
     },
     methods: {},

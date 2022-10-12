@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Welcome from '@/components/Welcome'
 import About from '@/components/About'
-import Coffee from '@/components/Coffee'
 import ZoomRedesign from '@/components/ZoomRedesign'
 import PixelPaper from '@/components/PixelPaper'
 import CatchCursor from '@/components/CatchCursor'
@@ -29,11 +28,6 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
-    },
-    {
-      path: '/coffee',
-      name: 'Coffee',
-      component: Coffee
     },
     {
       path: '/zoomredesign',

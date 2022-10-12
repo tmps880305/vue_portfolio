@@ -60,7 +60,7 @@
 
         <b-col xl="3">
           <div class="ratio" style="--bs-aspect-ratio: 150%">
-            <img :src="mainPic">
+            <img :src="secondPic">
           </div>
         </b-col>
       </b-row>
@@ -374,6 +374,7 @@
     data() {
       return {
         mainPic: require('../assets/img/works/zoomredesign/ZoomRedesign_main.jpg'),
+        secondPic: require('../assets/img/works/zoomredesign/ZoomRedesign_second.jpg'),
         affinityDiagramPic1: require('../assets/img/works/zoomredesign/AffinityDiagram_1.jpg'),
         affinityDiagramPic2: require('../assets/img/works/zoomredesign/AffinityDiagram_2.jpg'),
         behavioralVarPic: require('../assets/img/works/zoomredesign/BehavioralVariables.jpg'),
@@ -403,7 +404,7 @@
           title: 'Introduction',
           content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
         personaCodeNames: [{
           name: 'Leah',
           codes: ['P1:  A TA who is working at UCSD that needs to take some online tutoring for the students via Zoom. He complained about the screen and file sharing problems when he conducted with multiple students during his teaching. Also he couldn’t find how to quickly set up a discussion room for separating the students when he distributed some tasks for them.', 'P2: A graduate student with visual communication background at CCA and currently taking online courses through Zoom. She found some interaction problems both with students and the TA during the zoom meeting.', 'P3: An ex computer science background graduate student who was taking online courses via Zoom meeting. However, he only used Zoom while he was required to. Due to some privacy concerns like the mute function, he will keep worrying about if he has been mute or not during the whole meeting. So that he doesn\'t have much good feelings about this app.']

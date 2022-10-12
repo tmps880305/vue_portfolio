@@ -20,7 +20,7 @@
           </div>
         </b-col>
         <b-col xl="3" align-self="center">
-          <img :src="require('../assets/img/draft/Self_draft.png')" style="width: 100%">
+          <img :src="selfPic" style="width: 100%">
         </b-col>
       </b-row>
     </b-container>
@@ -37,61 +37,45 @@
       </b-row>
       <!---->
 
-      <b-row class="justify-content-center">
-        <b-col xl="5" align-self="center">
+      <b-row class="justify-content-center" v-for="mainPic in mainPics" :data="mainPic" :key="mainPic.id">
+
+        <b-col v-if="mainPic.loc=='left'" xl="5" align-self="center">
           <div class="ratio" style="--bs-aspect-ratio: 50%;">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="mainPic.source" style="width: 100%">
           </div>
         </b-col>
-
-        <b-col xl="3" align-self="center">
+        <b-col v-else-if="mainPic.loc=='right'" xl="3" align-self="center">
           <div class="t-tl-1">
-            <a>Hi, I'm Jen-I Wang.</a>
-            <p>A UI developer / UX researcher / Front-end developer</p>
+            <a>{{mainPic.title}}</a>
+          </div>
+          <div class="t-it-1">
+            <a>{{mainPic.prompt}}</a>
           </div>
         </b-col>
-      </b-row>
 
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
 
-      <b-row class="justify-content-center">
-        <b-col xl="3" align-self="center">
-          <div class="t-tl-1">
-            <a>Hi, I'm Jen-I Wang.</a>
-            <p>A UI developer / UX researcher / Front-end developer</p>
-          </div>
-        </b-col>
-        <b-col xl="5" align-self="center">
+        <b-col v-if="mainPic.loc=='right'" xl="5" align-self="center">
           <div class="ratio" style="--bs-aspect-ratio: 50%;">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="mainPic.source" style="width: 100%">
           </div>
         </b-col>
-      </b-row>
-
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
-
-      <b-row class="justify-content-center">
-        <b-col xl="5" align-self="center">
-          <div class="ratio" style="--bs-aspect-ratio: 50%;">
-            <img :src="mainPic" style="width: 100%">
-          </div>
-        </b-col>
-
-        <b-col xl="3" align-self="center">
+        <b-col v-else-if="mainPic.loc=='left'" xl="3" align-self="center">
           <div class="t-tl-1">
-            <a>Hi, I'm Jen-I Wang.</a>
-            <p>A UI developer / UX researcher / Front-end developer</p>
+            <a>{{mainPic.title}}</a>
+          </div>
+          <div class="t-it-1">
+            <a>{{mainPic.prompt}}</a>
           </div>
         </b-col>
+
+        <b-row>
+          <b-col>
+            <div style="height: 60px;background-color: transparent"></div>
+          </b-col>
+        </b-row>
+
       </b-row>
+
 
       <!--End of page-->
       <b-row>
@@ -111,27 +95,34 @@
       <b-row class="justify-content-center mt-3">
         <b-col xl="3">
           <div class="ratio ratio-1x1">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="interest" style="width: 100%">
           </div>
         </b-col>
         <b-col xl="3">
           <div class="ratio ratio-1x1">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="interest" style="width: 100%">
           </div>
         </b-col>
       </b-row>
       <b-row class="justify-content-center mt-3">
         <b-col xl="3">
           <div class="ratio ratio-1x1">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="interest" style="width: 100%">
           </div>
         </b-col>
         <b-col xl="3">
           <div class="ratio ratio-1x1">
-            <img :src="mainPic" style="width: 100%">
+            <img :src="interest" style="width: 100%">
           </div>
         </b-col>
       </b-row>
+
+      <b-row>
+        <b-col>
+          <div style="height: 60px;background-color: transparent"></div>
+        </b-col>
+      </b-row>
+
     </b-container>
 
     <!--Page 5-->
@@ -143,6 +134,7 @@
 
 <script>
   import Copyrights from '../components/Copyrights.vue'
+
   export default {
     name: 'Welcome',
     components: {
@@ -150,32 +142,27 @@
     },
     data() {
       return {
-        mainPic: require('../assets/img/IMG_0601.jpg'),
-        mainInfos: [{
-          id: 0, title: 'Tags', items: ['Accessibility', 'UX Design', 'Usability Test']
-        }, {
-          id: 1, title: 'My Role', items: ['UI Developer', 'UX Researcher', 'System Developer']
-        }, {
-          id: 2, title: 'Tools', items: ['figma.png', 'miro.png', 'sketch.png', 'java.png']
-        }],
-        motivateInfos: [{
-          id: 0,
-          title: 'Prompt',
-          sentence: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
-        }, {
-          id: 1,
-          title: 'Problem',
-          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
-        }, {
-          id: 2,
-          title: 'Solution',
-          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
-        }],
-        intro: {
-          title: 'Introduction',
-          content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
-        },
-        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
+        selfPic: require('../assets/img/draft/Self_draft.png'),
+        interest: require('../assets/img/photo/IMG_0601.jpg'),
+        mainPics: [
+          {
+            loc: 'left',
+            title: 'CatchCursor',
+            prompt: 'Voice User Interface to control the cursor',
+            source: require(`../assets/img/works/catchcursor/CatchCursor_main.jpg`)
+          },
+          {
+            loc: 'right',
+            title: 'Pixel Paper',
+            prompt: 'UX research for a college course system',
+            source: require(`../assets/img/works/pixelpaper/PixelPaper_main.jpg`)
+          },
+          {
+            loc: 'left',
+            title: 'Zoom Redesign',
+            prompt: 'Improve Zoom for online course conditions',
+            source: require(`../assets/img/works/zoomredesign/ZoomRedesign_main.jpg`)
+          }]
       }
     },
     methods: {},

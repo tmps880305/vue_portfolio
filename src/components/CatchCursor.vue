@@ -309,7 +309,8 @@
     },
     data() {
       return {
-        mainPic: require('../assets/img/IMG_0601.jpg'),
+        mainPic: require('../assets/img/works/catchcursor/CatchCursor_main.jpg'),
+        secondPic: require('../assets/img/works/catchcursor/CatchCursor_main.jpg'),
         workflowPic: require('../assets/img/works/catchcursor/workflow.jpg'),
         clientPic1: require('../assets/img/works/catchcursor/client_1.jpg'),
         clientPic2: require('../assets/img/works/catchcursor/client_2.jpg'),
@@ -341,7 +342,7 @@
           title: 'Introduction',
           content: 'The application of voice user interfaces in digital devices has been increasing significantly in recent times. Speech has been considered the most naturalistic and convenient way of communicating, thus enabling its use in operating different technological devices has become essential. One of the major motivations to implement it is to provide accessibility for people with motor impairments and disabilities. In this project, we present a model that helps in navigating the mouse and keyboard inputs by voice-based interaction system called ‘Catch-Cursor’ that navigates the cursor through voice commands on the digital screens. The voice commands are obtained using a speech module on Arduino, processed with machine learning on Edge Impulse, and controlled using the PyAutoGUI library on Python.'
         },
-        process: {title: 'Process', img: require('../assets/img/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
       }
     },
     methods: {},

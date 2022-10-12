@@ -42,7 +42,7 @@
 
         <b-col v-if="about.loc=='left'" xl="2" align-self="center">
           <div class="ratio ratio-1x1">
-            <img :src="require('../assets/img/'+about.pic)" style="width: 100%">
+            <img :src="require('../assets/img/photo/'+about.pic)" style="width: 100%">
           </div>
         </b-col>
         <b-col v-else-if="about.loc=='right'" xl="4" align-self="center">
@@ -61,7 +61,7 @@
 
         <b-col v-else-if="about.loc=='right'" xl="2" align-self="center">
           <div class="ratio ratio-1x1">
-            <img :src="require('../assets/img/'+about.pic)" style="width: 100%">
+            <img :src="require('../assets/img/photo/'+about.pic)" style="width: 100%">
           </div>
         </b-col>
 
@@ -114,7 +114,5 @@
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Merienda|Niconne|Nunito+Sans|Romanesco&display=swap');
-  /*@import './../assets/css/works.css';*/
-  /*@import './../assets/css/imgHover.css';*/
   @import './../assets/css/text.css';
 </style>
