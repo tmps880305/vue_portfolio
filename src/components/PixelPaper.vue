@@ -347,6 +347,13 @@
           </b-row>
         </b-col>
       </b-row>
+
+      <!--End of page-->
+      <b-row>
+        <div style="height: 180px;background-color: transparent">
+        </div>
+      </b-row>
+      <!---->
     </b-container>
 
     <!--Page 5-->

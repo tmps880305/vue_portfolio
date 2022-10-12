@@ -21,7 +21,7 @@
           </div>
         </b-col>
         <b-col xl="3" align-self="center">
-          <img :src="require('../assets/img/self.jpg')" style="width: 100%">
+          <img :src="selfPic" style="width: 100%">
         </b-col>
       </b-row>
     </b-container>
@@ -42,7 +42,7 @@
 
         <b-col v-if="about.loc=='left'" xl="2" align-self="center">
           <div class="ratio ratio-1x1">
-            <img :src="require('../assets/img/photo/'+about.pic)" style="width: 100%">
+            <img :src="about.pic" style="width: 100%">
           </div>
         </b-col>
         <b-col v-else-if="about.loc=='right'" xl="4" align-self="center">
@@ -50,7 +50,6 @@
             <p>{{about.sentence}}</p>
           </div>
         </b-col>
-
 
 
         <b-col v-if="about.loc=='left'" xl="4" align-self="center">
@@ -61,7 +60,7 @@
 
         <b-col v-else-if="about.loc=='right'" xl="2" align-self="center">
           <div class="ratio ratio-1x1">
-            <img :src="require('../assets/img/photo/'+about.pic)" style="width: 100%">
+            <img :src="about.pic" style="width: 100%">
           </div>
         </b-col>
 
@@ -92,6 +91,7 @@
 
 <script>
   import Copyrights from '../components/Copyrights.vue'
+
   export default {
     name: 'About',
     components: {
@@ -99,12 +99,27 @@
     },
     data() {
       return {
+        selfPic: require('../assets/img/self.jpg'),
         abouts: [{
-          title:'snowboard',sentence:'I love snowboarding!I love snowboarding!I love snowboarding!',pic:'IMG_0601.jpg',loc:'left'
-        },{
-          title:'coffee',sentence:'I enjoy brewing and tasting coffee!I love snowboarding!I love snowboarding!',pic:'IMG_4723.jpg',loc:'right'
-        },{
-          title:'photography',sentence:'I like to take photos!I love snowboarding!I love snowboarding!',pic:'IMG_4960.jpg',loc:'left'
+          title: 'snowboard',
+          sentence: 'I love snowboarding!I love snowboarding!I love snowboarding!',
+          pic: require('../assets/img/interests/snowboard_main.jpg'),
+          loc: 'left'
+        }, {
+          title: 'coffee',
+          sentence: 'I enjoy brewing and tasting coffee!I love snowboarding!I love snowboarding!',
+          pic: require('../assets/img/interests/coffee_main.jpg'),
+          loc: 'right'
+        }, {
+          title: 'photography',
+          sentence: 'I like to take photos!I love snowboarding!I love snowboarding!',
+          pic: require('../assets/img/interests/photo_main.jpg'),
+          loc: 'left'
+        }, {
+          title: 'freedive',
+          sentence: 'I like to take photos!I love snowboarding!I love snowboarding!',
+          pic: require('../assets/img/interests/freedive_main.jpg'),
+          loc: 'right'
         }],
       }
     },

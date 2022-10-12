@@ -93,27 +93,14 @@
       </div>
 
       <b-row class="justify-content-center mt-3">
-        <b-col xl="3">
-          <div class="ratio ratio-1x1">
-            <img :src="interest" style="width: 100%">
-          </div>
-        </b-col>
-        <b-col xl="3">
-          <div class="ratio ratio-1x1">
-            <img :src="interest" style="width: 100%">
-          </div>
-        </b-col>
-      </b-row>
-      <b-row class="justify-content-center mt-3">
-        <b-col xl="3">
-          <div class="ratio ratio-1x1">
-            <img :src="interest" style="width: 100%">
-          </div>
-        </b-col>
-        <b-col xl="3">
-          <div class="ratio ratio-1x1">
-            <img :src="interest" style="width: 100%">
-          </div>
+        <b-col xl="6">
+          <b-row>
+            <b-col xl="6" class="mt-3 mb-2" v-for="interest in interests" :data="interest" :key="interest.id">
+              <div class="ratio ratio-1x1">
+                <img :src="interest.src" style="width: 100%">
+              </div>
+            </b-col>
+          </b-row>
         </b-col>
       </b-row>
 
@@ -143,7 +130,16 @@
     data() {
       return {
         selfPic: require('../assets/img/draft/Self_draft.png'),
-        interest: require('../assets/img/photo/IMG_0601.jpg'),
+        interest: require('../assets/img/interests/snowboard_main.jpg'),
+        interests: [{
+          title: 'Snowboard', src: require('../assets/img/interests/snowboard_main.jpg')
+        }, {
+          title: 'Coffee', src: require('../assets/img/interests/coffee_main.jpg')
+        }, {
+          title: 'Photography', src: require('../assets/img/interests/photo_main.jpg')
+        }, {
+          title: 'Freedive', src: require('../assets/img/interests/freedive_main.jpg')
+        }],
         mainPics: [
           {
             loc: 'left',
