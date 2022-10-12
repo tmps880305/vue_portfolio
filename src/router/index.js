@@ -9,10 +9,11 @@ import Copyrights from '@/components/Copyrights'
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-
+import vueVimeoPlayer from 'vue-vimeo-player'
 
 Vue.use(BootstrapVue);
 Vue.use(Router)
+Vue.use(vueVimeoPlayer)
 
 export default new Router({
   scrollBehavior (to, from, savedPosition) {

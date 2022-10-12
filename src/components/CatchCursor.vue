@@ -60,7 +60,7 @@
 
         <b-col xl="3">
           <div class="ratio" style="--bs-aspect-ratio: 150%">
-            <img :src="mainPic">
+            <img :src="secondPic">
           </div>
         </b-col>
       </b-row>
@@ -130,12 +130,14 @@
                 <a>Approach</a>
               </div>
 
+              <!--Workflow-->
               <b-row class="justify-content-center mt-3 mb-3">
                 <b-col col md="8">
                   <img :src="workflowPic">
                 </b-col>
               </b-row>
 
+              <!--Approach Content-->
               <b-row class="mt-3 mb-3">
                 <div class="t-it-1">
                   <ul style="list-style-type: decimal">
@@ -260,37 +262,32 @@
 
               </b-row>
 
-            </div>
-          </b-row>
-
-          <b-row>
-            <div style="height: 60px;background-color: transparent">
-            </div>
-          </b-row>
-
-          <!--Demo-->
-          <b-row class="mt-3 mb-3">
-            <div style="background-color: transparent">
-              <div class="t-tl-1">
-                <a>Demo Video</a>
-              </div>
-              <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                video
-              </div>
-              <div class="mt-3 mb-3" style="height: 540px;background-color: lightblue">
-                video
-              </div>
+              <!--Demo-->
+              <b-row class="mt-3 mb-3">
+                <div class="t-tl-1">
+                  <a>Demonstrations</a>
+                </div>
+                <b-row class="justify-content-center" v-for="demoVideo in demoVideos" :data="demoVideo"
+                       :key="demoVideo.id">
+                  <b-col>
+                    <vimeo-player ref="player" :video-id="demoVideo.videoID" @ready="onReady(demoVideo)"
+                                  :player-height="demoVideo.videoHeight" allow="allowfullscreen"
+                                  allowfullscreen></vimeo-player>
+                  </b-col>
+                </b-row>
+              </b-row>
 
             </div>
           </b-row>
-
-          <b-row>
-            <div style="height: 180px;background-color: transparent">
-            </div>
-          </b-row>
-
         </b-col>
       </b-row>
+
+      <!--End of page-->
+      <b-row>
+        <div style="height: 180px;background-color: transparent">
+        </div>
+      </b-row>
+      <!---->
     </b-container>
 
     <!--Page 5-->
@@ -301,23 +298,23 @@
 
 <script>
   import Copyrights from '../components/Copyrights.vue'
+  import {vueVimeoPlayer} from 'vue-vimeo-player'
 
   export default {
     name: 'CatchCursor',
     components: {
-      Copyrights
+      Copyrights, vueVimeoPlayer
     },
     data() {
       return {
         mainPic: require('../assets/img/works/catchcursor/CatchCursor_main.jpg'),
-        secondPic: require('../assets/img/works/catchcursor/CatchCursor_main.jpg'),
+        secondPic: require('../assets/img/works/catchcursor/CatchCursor_second.png'),
         workflowPic: require('../assets/img/works/catchcursor/workflow.jpg'),
         clientPic1: require('../assets/img/works/catchcursor/client_1.jpg'),
         clientPic2: require('../assets/img/works/catchcursor/client_2.jpg'),
         edgeLogo: require('../assets/img/works/catchcursor/edgeimpulse_logo.png'),
         edgeAccuracyPic: require('../assets/img/works/catchcursor/edgeimpulse_accuracy.jpg'),
         raspberryPic: require('../assets/img/draft/tool_icon/raspberry.png'),
-        copyrightPic: require('../assets/img/something/copyright_filled.png'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Prototyping', 'UI/UX Develop', 'IoT Develop', 'Machine Learning']
         }, {
@@ -343,9 +340,24 @@
           content: 'The application of voice user interfaces in digital devices has been increasing significantly in recent times. Speech has been considered the most naturalistic and convenient way of communicating, thus enabling its use in operating different technological devices has become essential. One of the major motivations to implement it is to provide accessibility for people with motor impairments and disabilities. In this project, we present a model that helps in navigating the mouse and keyboard inputs by voice-based interaction system called ‘Catch-Cursor’ that navigates the cursor through voice commands on the digital screens. The voice commands are obtained using a speech module on Arduino, processed with machine learning on Edge Impulse, and controlled using the PyAutoGUI library on Python.'
         },
         process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
+        demoVideos: [{
+          videoID: '759682871', videoHeight: 400, playerReady: false
+        }, {
+          videoID: '759683135', videoHeight: 400, playerReady: false
+        }]
       }
     },
-    methods: {},
+    methods: {
+      onReady(val) {
+        val.playerReady = true
+      },
+      play() {
+        this.$refs.player.play()
+      },
+      stop() {
+        this.$refs.player.stop()
+      }
+    },
   }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <b-container fluid style="height: 90vh;position: fixed;z-index: 10">
-    <!--<b-container fluid style="position: fixed;z-index: 10">-->
+    <!--<b-container fluid style="height: 90vh;position: fixed;z-index: 10">-->
+    <b-container fluid style="position: fixed;z-index: 10">
       <b-row style="height: 80px;background-color: white;" align-v="center">
         <b-col xl="3"></b-col>
         <b-col xl="3">
@@ -24,14 +24,14 @@
           </b-row>
         </b-col>
       </b-row>
-      <b-row style="height: 87vh;" align-v="end">
-        <b-col>
-          <b-row align-h="end">
-            <img style="cursor: pointer;height: 45px;width:65px;align-self: end;margin-right: 40px"
-                 :src="backtotop" @click="scrollToTop()">
-          </b-row>
-        </b-col>
-      </b-row>
+      <!--<b-row style="height: 87vh;" align-v="end">-->
+        <!--<b-col>-->
+          <!--<b-row align-h="end">-->
+            <!--<img style="cursor: pointer;height: 45px;width:65px;align-self: end;margin-right: 40px"-->
+                 <!--:src="backtotop" @click="scrollToTop()">-->
+          <!--</b-row>-->
+        <!--</b-col>-->
+      <!--</b-row>-->
     </b-container>
     <router-view/>
   </div>

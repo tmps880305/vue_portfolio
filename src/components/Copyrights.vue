@@ -1,7 +1,7 @@
 <template>
 
   <b-container fluid>
-    <b-row class="justify-content-center" style="height: 400px;background-color: lightgoldenrodyellow">
+    <b-row class="justify-content-center" style="height: 400px;background-color: #AC7755">
       <b-col xl="3">
         <div>
           <p>Thank you for your attention!</p>
