@@ -381,7 +381,7 @@
     },
     data() {
       return {
-        mainPic: require('../assets/img/works/zoomredesign/ZoomRedesign_main.jpg'),
+        mainPic: require('../assets/img/works/zoomredesign/ZoomRedesign_main_2.jpg'),
         secondPic: require('../assets/img/works/zoomredesign/ZoomRedesign_second.jpg'),
         affinityDiagramPic1: require('../assets/img/works/zoomredesign/AffinityDiagram_1.jpg'),
         affinityDiagramPic2: require('../assets/img/works/zoomredesign/AffinityDiagram_2.jpg'),

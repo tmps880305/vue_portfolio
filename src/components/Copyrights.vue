@@ -42,8 +42,8 @@
     name: 'Copyrights',
     data() {
       return {
-        emailPic: require('../assets/img/something/email_ios.png'),
-        linkedInPic: require('../assets/img/something/linkedin_color.png'),
+        emailPic: require('../assets/img/icons/email_ios.png'),
+        linkedInPic: require('../assets/img/icons/linkedin_white.png'),
         email: 'mailto: jeniwang09@gmail.com',
         linkedIn: 'https://www.linkedin.com/in/jen-i-wang-8899a7221'
       }

@@ -307,7 +307,7 @@
     },
     data() {
       return {
-        mainPic: require('../assets/img/works/catchcursor/CatchCursor_main.jpg'),
+        mainPic: require('../assets/img/works/catchcursor/CatchCursor_main_2.jpg'),
         secondPic: require('../assets/img/works/catchcursor/CatchCursor_second.png'),
         workflowPic: require('../assets/img/works/catchcursor/workflow.jpg'),
         clientPic1: require('../assets/img/works/catchcursor/client_1.jpg'),

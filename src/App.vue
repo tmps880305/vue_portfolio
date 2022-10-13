@@ -10,7 +10,8 @@
         <b-col xl="2">
           <b-row align-h="end">
             <b-col>
-              <router-link class="navButton" to="/">PROJECT</router-link>
+              <!--<router-link class="navButton" to="/">PROJECT</router-link>\-->
+              <router-link class="navButton" :to="{name: 'Welcome', hash: '#project'}">PROJECT</router-link>
             </b-col>
             <b-col>
               <a class="navButton" @click="gotoPage">RESUME</a>
@@ -43,7 +44,7 @@
     data() {
       return {
         logo: require('./assets/img/logo.jpg'),
-        backtotop: require('./assets/img/something/back_to_top.png'),
+        backtotop: require('./assets/img/icons/back_to_top.png'),
       }
     },
     methods: {

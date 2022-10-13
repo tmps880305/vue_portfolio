@@ -37,7 +37,7 @@
       </b-row>
       <!---->
 
-      <b-row class="justify-content-center" v-for="mainPic in mainPics" :data="mainPic" :key="mainPic.id">
+      <b-row id="project" class="justify-content-center" v-for="mainPic in mainPics" :data="mainPic" :key="mainPic.id">
 
         <b-col v-if="mainPic.loc=='left'" xl="5" align-self="center">
           <div class="ratio" style="--bs-aspect-ratio: 50%;cursor: pointer;" @click="routePage(mainPic.link)">
@@ -159,22 +159,22 @@
           {
             loc: 'left',
             title: 'CatchCursor',
-            prompt: 'Voice User Interface to control the cursor',
-            source: require(`../assets/img/works/catchcursor/CatchCursor_main.jpg`),
+            prompt: 'A Voice User Interface to control the cursor',
+            source: require(`../assets/img/works/catchcursor/CatchCursor_main_1.jpg`),
             link: '/catchcursor'
           },
           {
             loc: 'right',
             title: 'Pixel Paper',
             prompt: 'UX research for a college course system',
-            source: require(`../assets/img/works/pixelpaper/PixelPaper_main.jpg`),
+            source: require(`../assets/img/works/pixelpaper/PixelPaper_main_1.jpg`),
             link: '/pixelpaper'
           },
           {
             loc: 'left',
             title: 'Zoom Redesign',
             prompt: 'Improve Zoom for online course conditions',
-            source: require(`../assets/img/works/zoomredesign/ZoomRedesign_main.jpg`),
+            source: require(`../assets/img/works/zoomredesign/ZoomRedesign_main_1.jpg`),
             link: '/zoomredesign'
           }]
       }

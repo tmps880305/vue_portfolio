@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89e7e4ce-0ece-42d0-a20c-25c83f019ec2" name="Default Changelist" comment="">
+    <list default="true" id="89e7e4ce-0ece-42d0-a20c-25c83f019ec2" name="Default Changelist" comment="1. Add navigation to '#project'&#10;2. Add project mainPic title/prompts&#10;3. 'Process' image left&#10;4. 'Main intro' gif left">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/imgHover.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/imgHover.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CatchCursor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CatchCursor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Copyrights.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Copyrights.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PixelPaper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PixelPaper.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ZoomRedesign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ZoomRedesign.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Welcome.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+            <state relative-caret-position="370">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -52,17 +54,7 @@
                 <element signature="n#style#0;n#div#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#3913#4615#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/assets/css/imgHover.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -70,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Copyrights.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="1100">
+              <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
@@ -87,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/About.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -107,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CatchCursor.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+            <state relative-caret-position="338">
+              <caret line="309" column="76" selection-start-line="309" selection-start-column="76" selection-end-line="309" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -159,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PixelPaper.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="376" column="80" selection-start-line="376" selection-start-column="80" selection-end-line="376" selection-end-column="80" />
+            <state relative-caret-position="289">
+              <caret line="375" column="74" selection-start-line="375" selection-start-column="74" selection-end-line="375" selection-end-column="74" />
               <folding>
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#b-container#0;n#div#0;n#template#0;n#!!top" />
@@ -202,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ZoomRedesign.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="547">
+              <caret line="383" column="78" selection-start-line="383" selection-start-column="78" selection-end-line="383" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -247,8 +239,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="308">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -354,17 +346,17 @@
         <option value="$PROJECT_DIR$/src/components/ArticleWorkMyweb.vue" />
         <option value="$PROJECT_DIR$/src/components/ArticleWorkObjC.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/text.css" />
-        <option value="$PROJECT_DIR$/src/components/ZoomRedesign.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/test_hover.css" />
         <option value="$PROJECT_DIR$/src/assets/css/workHover.css" />
-        <option value="$PROJECT_DIR$/src/components/CatchCursor.vue" />
-        <option value="$PROJECT_DIR$/src/components/Copyrights.vue" />
-        <option value="$PROJECT_DIR$/src/components/PixelPaper.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/components/About.vue" />
+        <option value="$PROJECT_DIR$/src/assets/css/imgHover.css" />
+        <option value="$PROJECT_DIR$/src/components/CatchCursor.vue" />
+        <option value="$PROJECT_DIR$/src/components/PixelPaper.vue" />
+        <option value="$PROJECT_DIR$/src/components/ZoomRedesign.vue" />
+        <option value="$PROJECT_DIR$/src/components/Copyrights.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/Welcome.vue" />
-        <option value="$PROJECT_DIR$/src/assets/css/imgHover.css" />
       </list>
     </option>
   </component>
@@ -403,7 +395,7 @@
               <item name="vue_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue_portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -492,7 +484,7 @@
       <workItem from="1665280990114" duration="620000" />
       <workItem from="1665294886884" duration="297000" />
       <workItem from="1665568145477" duration="2685000" />
-      <workItem from="1665611249542" duration="13083000" />
+      <workItem from="1665611249542" duration="14453000" />
     </task>
     <task id="LOCAL-00001" summary="1. Change file names&#10;2. Fix v-for key issue&#10;3. Finish ZoomRedesign">
       <created>1664695531640</created>
@@ -634,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1665626700192</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="1. Add navigation to '#interest'">
+      <created>1665627466527</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665627466527</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148294000" />
+    <option name="totallyTimeSpent" value="149664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,7 +682,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pic smaller, css make" />
     <MESSAGE value="router top" />
     <MESSAGE value="Article container change" />
     <MESSAGE value="1. Change file names&#10;2. Fix v-for key issue&#10;3. Finish ZoomRedesign" />
@@ -707,7 +705,9 @@
     <MESSAGE value="1. Add img hover for Interests" />
     <MESSAGE value="1. Add interests descriptions" />
     <MESSAGE value="1. Finish Copyrights&#10;2. Add Resume and finalize nav bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Finish Copyrights&#10;2. Add Resume and finalize nav bar" />
+    <MESSAGE value="1. Add navigation to '#interest'" />
+    <MESSAGE value="1. Add navigation to '#project'&#10;2. Add project mainPic title/prompts&#10;3. 'Process' image left&#10;4. 'Main intro' gif left" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Add navigation to '#project'&#10;2. Add project mainPic title/prompts&#10;3. 'Process' image left&#10;4. 'Main intro' gif left" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/assets/img/something/edit.jpg" />
@@ -871,68 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/text.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="8" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Copyrights.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#1;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#b-col#1;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PixelPaper.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="376" column="80" selection-start-line="376" selection-start-column="80" selection-end-line="376" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#1;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-row#1;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#0;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#b-col#1;n#b-row#0;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#1;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#4;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#5;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#1;n#b-row#5;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#6;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#7;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -943,53 +881,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ZoomRedesign.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/About.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#b-col#2;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-col#1;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-container#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#1;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#1;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#2;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#3;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#3;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#4;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#5;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#b-row#3;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#3;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#b-row#4;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#4;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#3;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/imgHover.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/text.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CatchCursor.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="338">
+          <caret line="309" column="76" selection-start-line="309" selection-start-column="76" selection-end-line="309" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1036,29 +964,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/PixelPaper.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        <state relative-caret-position="289">
+          <caret line="375" column="74" selection-start-line="375" selection-start-column="74" selection-end-line="375" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#1;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-row#1;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#0;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#b-col#1;n#b-row#0;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#1;n#b-row#2;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#4;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#5;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#1;n#b-row#5;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#6;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#7;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ZoomRedesign.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="383" column="78" selection-start-line="383" selection-start-column="78" selection-end-line="383" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#b-col#2;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#div#2;n#b-col#0;n#b-row#1;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#3;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#b-col#0;n#b-row#0;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-col#1;n#b-row#1;n#b-container#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-container#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#b-row#2;n#b-col#0;n#b-row#1;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#0;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#1;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#1;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#2;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#3;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#3;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#4;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#5;n#div#1;n#b-row#2;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#b-row#3;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#3;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#b-row#4;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#b-col#0;n#b-row#0;n#div#1;n#b-row#4;n#div#0;n#b-row#0;n#b-col#0;n#b-row#1;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-row#2;n#b-container#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Copyrights.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#b-col#1;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#b-col#1;n#b-row#0;n#b-container#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="308">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-row#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1069,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Welcome.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="101" column="39" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="370">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-container#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1088,15 +1095,7 @@
             <element signature="n#style#0;n#div#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#b-col#0;n#b-row#0;n#b-col#0;n#b-row#0;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#b-col#0;n#b-row#2;n#b-container#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3913#4615#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/imgHover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
         </state>
       </provider>
     </entry>
