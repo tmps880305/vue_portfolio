@@ -95,9 +95,13 @@
       <b-row class="justify-content-center mt-3">
         <b-col xl="6">
           <b-row>
-            <b-col xl="6" class="mt-3 mb-2" v-for="interest in interests" :data="interest" :key="interest.id">
-              <div class="ratio ratio-1x1" style="cursor: pointer" @click="routePage(interest.link)">
-                <img :src="interest.src" style="width: 100%">
+            <b-col xl="6" class="mt-3 mb-2" v-for="interest in interests" :data="interest"
+                   :key="interest.id">
+              <div class="hovereffect">
+                  <img :src="interest.src" style="width: 100%">
+                <div class="overlay" @click="routePage(interest.link)">
+                  <h2>{{interest.title}}</h2>
+                </div>
               </div>
             </b-col>
           </b-row>
@@ -133,11 +137,11 @@
         interest: require('../assets/img/interests/snowboard_main.jpg'),
         interests: [
           {
-            title: 'Snowboard',
+            title: 'Snowboarding',
             src: require('../assets/img/interests/snowboard_main.jpg'),
             link: '/about'
           }, {
-            title: 'Coffee',
+            title: 'Coffee Brewing',
             src: require('../assets/img/interests/coffee_main.jpg'),
             link: '/about'
           }, {
@@ -145,7 +149,7 @@
             src: require('../assets/img/interests/photo_main.jpg'),
             link: '/about'
           }, {
-            title: 'Freedive',
+            title: 'Free Diving',
             src: require('../assets/img/interests/freedive_main.jpg'),
             link: '/about'
           }
@@ -185,5 +189,7 @@
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Merienda|Niconne|Nunito+Sans|Romanesco&display=swap');
   @import './../assets/css/text.css';
+  @import '../assets/css/imgHover.css';
+
 
 </style>
