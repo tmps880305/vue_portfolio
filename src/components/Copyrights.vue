@@ -1,18 +1,35 @@
 <template>
 
-  <b-container fluid>
-    <b-row class="justify-content-center" style="height: 400px;background-color: #AC7755">
+  <b-container fluid style="background-color: #AC7755">
+    <b-row>
+      <b-col>
+        <div style="height: 120px;background-color: transparent"></div>
+      </b-col>
+    </b-row>
+    <b-row class="justify-content-center" style="height: 400px;">
       <b-col xl="3">
-        <div>
+        <div class="t-tl-1">
           <p>Thank you for your attention!</p>
           <p>Feel free to contact me!</p>
         </div>
       </b-col>
       <b-col xl="3">
-        <div>
-          <img :src="emailPic" style="height: 40px;width: 40px">
-          <img :src="linkedInPic" style="height: 40px;width: 40px">
-        </div>
+        <b-row class="justify-content-center mt-3">
+          <b-col cols="2">
+            <img :src="emailPic" style="height: 40px;width: 40px">
+          </b-col>
+          <b-col cols="4" align-self="center">
+              <a :href="email">jeniwang09@gmail.com</a>
+          </b-col>
+        </b-row>
+        <b-row class="justify-content-center mt-3">
+          <b-col cols="2">
+            <img :src="linkedInPic" style="height: 40px;width: 40px">
+          </b-col>
+          <b-col cols="4" align-self="center">
+              <a :href="linkedIn">LinkedIn</a>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
 
@@ -27,19 +44,23 @@
       return {
         emailPic: require('../assets/img/something/email_ios.png'),
         linkedInPic: require('../assets/img/something/linkedin_color.png'),
+        email: 'mailto: jeniwang09@gmail.com',
+        linkedIn: 'https://www.linkedin.com/in/jen-i-wang-8899a7221'
       }
     },
-    methods: {
-      home() {
-        this.$router.push("/")
-      },
-      scrollToTop() {
-        window.scrollTo(0, 0);
-      }
-    }
+    methods: {}
   }
 </script>
 
 <style scoped>
+  @import './../assets/css/text.css';
+
+  a:link {
+    font-family: 'Nunito Sans', 'sans-serif';
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #000000;
+  }
+
 
 </style>

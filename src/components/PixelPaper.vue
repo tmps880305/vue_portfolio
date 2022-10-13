@@ -374,7 +374,7 @@
     data() {
       return {
         mainPic: require('../assets/img/works/pixelpaper/PixelPaper_main.jpg'),
-        secondPic: require('../assets/img/works/pixelpaper/PixelPaper_second.jpg'),
+        secondPic: require('../assets/img/works/pixelpaper/PixelPaper_second.png'),
         flyerPic: require('../assets/img/works/pixelpaper/Flyer.jpg'),
         UsabilityTestPic: require('../assets/img/works/pixelpaper/UsabilityTest.jpg'),
         mainInfos: [{

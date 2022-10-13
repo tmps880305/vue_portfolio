@@ -4,20 +4,20 @@
     <b-container fluid style="position: fixed;z-index: 10">
       <b-row style="height: 80px;background-color: white;" align-v="center">
         <b-col xl="3"></b-col>
-        <b-col xl="3">
-            <img style="margin-left:30px;cursor: pointer;height: 50px;width: 50px;" :src="logo" @click="home()">
+        <b-col xl="4">
+          <img style="margin-left:30px;cursor: pointer;height: 50px;width: 50px;" :src="logo" @click="home()">
         </b-col>
-        <b-col xl="3">
+        <b-col xl="2">
           <b-row align-h="end">
             <b-col>
-              <router-link class="navButton" to="/pixelpaper">PIXEL</router-link>
+              <router-link class="navButton" to="/">PROJECT</router-link>
             </b-col>
             <b-col>
-              <router-link class="navButton" to="/zoomredesign">ZOOM</router-link>
+              <a class="navButton" @click="gotoPage">RESUME</a>
             </b-col>
-            <b-col>
-              <router-link class="navButton" to="/catchcursor">CATCH</router-link>
-            </b-col>
+            <!--<b-col>-->
+            <!--<router-link class="navButton" to="/catchcursor">CATCH</router-link>-->
+            <!--</b-col>-->
             <b-col>
               <router-link class="navButton" to="/about">ABOUT</router-link>
             </b-col>
@@ -25,12 +25,12 @@
         </b-col>
       </b-row>
       <!--<b-row style="height: 87vh;" align-v="end">-->
-        <!--<b-col>-->
-          <!--<b-row align-h="end">-->
-            <!--<img style="cursor: pointer;height: 45px;width:65px;align-self: end;margin-right: 40px"-->
-                 <!--:src="backtotop" @click="scrollToTop()">-->
-          <!--</b-row>-->
-        <!--</b-col>-->
+      <!--<b-col>-->
+      <!--<b-row align-h="end">-->
+      <!--<img style="cursor: pointer;height: 45px;width:65px;align-self: end;margin-right: 40px"-->
+      <!--:src="backtotop" @click="scrollToTop()">-->
+      <!--</b-row>-->
+      <!--</b-col>-->
       <!--</b-row>-->
     </b-container>
     <router-view/>
@@ -51,7 +51,10 @@
         this.$router.push("/")
       },
       scrollToTop() {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
+      },
+      gotoPage() {
+        window.open("https://drive.google.com/file/d/15Tc6jKU0lvtD7MOIEyOTGuAPv2xfRdwe/view?usp=sharing")
       }
     }
   }
