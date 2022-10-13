@@ -47,14 +47,20 @@
         </b-col>
         <b-col v-else-if="about.loc=='right'" xl="4" align-self="center">
           <div class="t-tl-1">
-            <p>{{about.sentence}}</p>
+            <a>{{about.title}}</a>
+          </div>
+          <div class="t-it-1">
+            <a>{{about.sentence}}</a>
           </div>
         </b-col>
 
 
         <b-col v-if="about.loc=='left'" xl="4" align-self="center">
           <div class="t-tl-1">
-            <p>{{about.sentence}}</p>
+            <a>{{about.title}}</a>
+          </div>
+          <div class="t-it-1">
+            <a>{{about.sentence}}</a>
           </div>
         </b-col>
 
@@ -101,23 +107,23 @@
       return {
         selfPic: require('../assets/img/self.jpg'),
         abouts: [{
-          title: 'snowboard',
-          sentence: 'I love snowboarding!I love snowboarding!I love snowboarding!',
+          title: 'Snowboarding',
+          sentence: 'I love snowboarding! I have been practicing and training since 10, and I was certificated as an instructor in 2014.',
           pic: require('../assets/img/interests/snowboard_main.jpg'),
           loc: 'left'
         }, {
-          title: 'coffee',
-          sentence: 'I enjoy brewing and tasting coffee!I love snowboarding!I love snowboarding!',
+          title: 'Coffee Brewing',
+          sentence: 'I enjoy brewing and tasting coffee everyday! Through different method, flavors could be extract from beans. And of course, I play Latte arts!',
           pic: require('../assets/img/interests/coffee_main.jpg'),
           loc: 'right'
         }, {
-          title: 'photography',
-          sentence: 'I like to take photos!I love snowboarding!I love snowboarding!',
+          title: 'Photography',
+          sentence: 'Taking photos when traveling obsess me. I forgot times when I try to catch unforgettable scenes.',
           pic: require('../assets/img/interests/photo_main.jpg'),
           loc: 'left'
         }, {
-          title: 'freedive',
-          sentence: 'I like to take photos!I love snowboarding!I love snowboarding!',
+          title: 'Free Dive',
+          sentence: 'Diving make me relaxing. I feel like going on a journey out of the world when diving into the ocean.',
           pic: require('../assets/img/interests/freedive_main.jpg'),
           loc: 'right'
         }],
