@@ -54,7 +54,7 @@
   background-color: transparent;
   color: #FFF;
   padding: 1em 0;
-  margin-top: 25%;
+  margin-top: 20%;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

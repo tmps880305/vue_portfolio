@@ -99,9 +99,10 @@
                    :key="interest.id">
               <div class="hovereffect">
                   <img :src="interest.src" style="width: 100%">
-                <div class="overlay" @click="routePage(interest.link)">
+                <router-link class="overlay"
+                             :to="{name: 'About', hash: '#interest'}">
                   <h2>{{interest.title}}</h2>
-                </div>
+                </router-link>
               </div>
             </b-col>
           </b-row>

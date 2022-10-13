@@ -16,8 +16,15 @@ Vue.use(Router)
 Vue.use(vueVimeoPlayer)
 
 export default new Router({
-  scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    } else {
+      return {x: 0, y: 0}
+
+    }
   },
   routes: [
     {
@@ -34,7 +41,7 @@ export default new Router({
       path: '/zoomredesign',
       name: 'ZoomRedesign',
       component: ZoomRedesign
-    },{
+    }, {
       path: '/pixelpaper',
       name: 'PixelPaper',
       component: PixelPaper
@@ -49,5 +56,6 @@ export default new Router({
       name: 'Copyrights',
       component: Copyrights
     }
-  ]
+  ],
+
 })
