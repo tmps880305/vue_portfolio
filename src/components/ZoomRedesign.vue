@@ -26,7 +26,7 @@
               <b-col cols="3" v-for="item in mainInfo.items" :data="item"
                      :key="item.id">
                 <div style="height: 60px">
-                  <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
+                  <img :src="item" style="height: 100%">
                 </div>
               </b-col>
             </b-row>
@@ -102,9 +102,9 @@
           <b-row>
             <div style="background-color: transparent">
               <div class="t-tl-1">{{process.title}}</div>
-              <div style="height: 120px;background-color: lightblue">
-                <img :src="process.img" style="height: 100%; width: 100%">
-              </div>
+              <b-col>
+                <img :src="process.img" style="width: 100%">
+              </b-col>
             </div>
           </b-row>
 
@@ -130,9 +130,9 @@
                 <a>Approach</a>
               </div>
 
-              <!--Affinity Diagram-->:data="mtvInfo" :key="mtvInfo.id
+              <!--Affinity Diagram-->
               <b-row class="mt-3 mb-3">
-                <div class="t-tl-2 ">
+                <div class="t-tl-2">
                   <a>Affinity Diagram Process</a>
                 </div>
                 <div>
@@ -374,9 +374,10 @@
 
 <script>
   import Copyrights from '../components/Copyrights.vue'
+
   export default {
     name: 'ZoomRedesign',
-    components:{
+    components: {
       Copyrights
     },
     data() {
@@ -393,7 +394,10 @@
         }, {
           id: 1, title: 'My Role', items: ['UX Researcher', 'UI Developer']
         }, {
-          id: 2, title: 'Tools', items: ['figma.png', 'miro.png']
+          id: 2, title: 'Tools', items: [
+            require('../assets/img/icons/tool_icon/figma.png'),
+            require('../assets/img/icons/tool_icon/miro.png')
+          ]
         }],
         motivateInfos: [{
           id: 0,
@@ -412,7 +416,7 @@
           title: 'Introduction',
           content: 'Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.Interface control could become hand-free to provide accessibility for people in hand-busy situations.'
         },
-        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/works/zoomredesign/ZoomRedesign_process.png')},
         personaCodeNames: [{
           name: 'Leah',
           codes: ['P1:  A TA who is working at UCSD that needs to take some online tutoring for the students via Zoom. He complained about the screen and file sharing problems when he conducted with multiple students during his teaching. Also he couldn’t find how to quickly set up a discussion room for separating the students when he distributed some tasks for them.', 'P2: A graduate student with visual communication background at CCA and currently taking online courses through Zoom. She found some interaction problems both with students and the TA during the zoom meeting.', 'P3: An ex computer science background graduate student who was taking online courses via Zoom meeting. However, he only used Zoom while he was required to. Due to some privacy concerns like the mute function, he will keep worrying about if he has been mute or not during the whole meeting. So that he doesn\'t have much good feelings about this app.']

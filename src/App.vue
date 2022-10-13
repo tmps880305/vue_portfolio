@@ -43,7 +43,7 @@
     name: 'App',
     data() {
       return {
-        logo: require('./assets/img/logo.jpg'),
+        logo: require('./assets/img/self/logo.jpg'),
         backtotop: require('./assets/img/icons/back_to_top.png'),
       }
     },

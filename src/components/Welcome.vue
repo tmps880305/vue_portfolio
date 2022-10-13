@@ -5,6 +5,7 @@
     <b-container fluid style="height: 90vh">
       <b-row>
         <b-col>
+          <div style="height: 60px;background-color: transparent"></div>
           <div style="height: 80px;background-color: transparent"></div>
         </b-col>
       </b-row>
@@ -12,7 +13,7 @@
       <b-row class="justify-content-center">
         <b-col xl="1"></b-col>
         <b-col xl="3" align-self="center">
-          <div class="t-tl-1">
+          <div class="t-tl-0">
             <p>Hi, I'm Jen-I Wang, a</p>
             <p>UI developer / </p>
             <p>UX researcher /</p>
@@ -134,7 +135,7 @@
     },
     data() {
       return {
-        selfPic: require('../assets/img/draft/Self_draft.png'),
+        selfPic: require('../assets/img/self/Self_draft.png'),
         interest: require('../assets/img/interests/snowboard_main.jpg'),
         interests: [
           {
@@ -191,6 +192,7 @@
   @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Merienda|Niconne|Nunito+Sans|Romanesco&display=swap');
   @import './../assets/css/text.css';
   @import '../assets/css/imgHover.css';
+
 
 
 </style>

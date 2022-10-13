@@ -1,8 +1,15 @@
+.t-tl-0 {
+  font-family: 'Nunito Sans', 'sans-serif';
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #313E71;
+}
+
 .t-tl-1 {
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: 30px;
   /*letter-spacing: 2px;*/
-  color: #000000;
+  color: #313E71;
   padding-bottom: 8px;
 }
 
@@ -10,7 +17,7 @@
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: 24px;
   /*letter-spacing: 2px;*/
-  color: #000000;
+  color: #313E71;
 }
 
 .t-tl-3 {
@@ -18,19 +25,19 @@
   font-size: 18px;
   font-weight: bolder;
   /*letter-spacing: 2px;*/
-  color: #000000;
+  color: #313E71;
 }
 
 .t-it-1 {
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: 18px;
   /*letter-spacing: 2px;*/
-  color: #000000;
+  color: #313E71;
 }
 
 .t-it-2 {
   font-family: 'Nunito Sans', 'sans-serif';
   font-size: 22px;
   /*letter-spacing: 2px;*/
-  color: #000000;
+  color: #313E71;
 }

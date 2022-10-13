@@ -8,7 +8,7 @@
     </b-row>
     <b-row class="justify-content-center" style="height: 400px;">
       <b-col xl="3">
-        <div class="t-tl-1">
+        <div class="t-tl-1" style="color: #000000">
           <p>Thank you for your attention!</p>
           <p>Feel free to contact me!</p>
         </div>

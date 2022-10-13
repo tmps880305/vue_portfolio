@@ -27,7 +27,7 @@
               <b-col cols="3" v-for="item in mainInfo.items" :data="item"
                      :key="item.id">
                 <div style="height: 60px">
-                  <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
+                  <img :src="item" style="height: 100%">
                 </div>
               </b-col>
             </b-row>
@@ -103,9 +103,9 @@
           <b-row>
             <div style="background-color: transparent">
               <div class="t-tl-1">{{process.title}}</div>
-              <div style="height: 120px;background-color: lightblue">
-                <img :src="process.img" style="height: 100%; width: 100%">
-              </div>
+              <b-col>
+                <img :src="process.img" style="width: 100%">
+              </b-col>
             </div>
           </b-row>
 
@@ -382,7 +382,10 @@
         }, {
           id: 1, title: 'My Role', items: ['UX Researcher', 'Usability Tester']
         }, {
-          id: 2, title: 'Tools', items: ['miro.png', 'figma.png']
+          id: 2, title: 'Tools', items: [
+            require('../assets/img/icons/tool_icon/miro.png'),
+            require('../assets/img/icons/tool_icon/figma.png')
+          ]
         }],
         motivateInfos: [{
           id: 0,
@@ -401,7 +404,7 @@
           title: 'Introduction',
           content: 'Pixel Paper is an education system prototype which provides online learning resources, including functions like: Library, Dashboard, Bookshelf, Locker, Messages, and Help.'
         },
-        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/works/pixelpaper/PixelPaper_process.png')},
       }
     },
     methods: {},

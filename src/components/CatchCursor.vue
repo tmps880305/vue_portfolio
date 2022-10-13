@@ -26,7 +26,7 @@
               <b-col cols="3" v-for="item in mainInfo.items" :data="item"
                      :key="item.id">
                 <div style="height: 60px">
-                  <img :src="require('../assets/img/draft/tool_icon/'+item)" style="height: 100%">
+                  <img :src="item" style="height: 100%">
                 </div>
               </b-col>
             </b-row>
@@ -102,9 +102,9 @@
           <b-row>
             <div style="background-color: transparent">
               <div class="t-tl-1">{{process.title}}</div>
-              <div style="height: 120px;background-color: lightblue">
-                <img :src="process.img" style="height: 100%; width: 100%">
-              </div>
+              <b-col>
+                <img :src="process.img" style="width: 100%">
+              </b-col>
             </div>
           </b-row>
 
@@ -314,13 +314,17 @@
         clientPic2: require('../assets/img/works/catchcursor/client_2.jpg'),
         edgeLogo: require('../assets/img/works/catchcursor/edgeimpulse_logo.png'),
         edgeAccuracyPic: require('../assets/img/works/catchcursor/edgeimpulse_accuracy.jpg'),
-        raspberryPic: require('../assets/img/draft/tool_icon/raspberry.png'),
+        raspberryPic: require('../assets/img/icons/tool_icon/raspberry.png'),
         mainInfos: [{
           id: 0, title: 'Tags', items: ['Prototyping', 'UI/UX Develop', 'IoT Develop', 'Machine Learning']
         }, {
           id: 1, title: 'My Role', items: ['Main Developer', 'UI Developer', 'UX Researcher']
         }, {
-          id: 2, title: 'Tools', items: ['raspberry.png', 'python.png', 'edgeimpulse.png']
+          id: 2, title: 'Tools', items: [
+            require('../assets/img/icons/tool_icon/raspberry.png'),
+            require('../assets/img/icons/tool_icon/python.png'),
+            require('../assets/img/icons/tool_icon/edgeimpulse.png')
+          ]
         }],
         motivateInfos: [{
           id: 0,
@@ -339,7 +343,7 @@
           title: 'Introduction',
           content: 'The application of voice user interfaces in digital devices has been increasing significantly in recent times. Speech has been considered the most naturalistic and convenient way of communicating, thus enabling its use in operating different technological devices has become essential. One of the major motivations to implement it is to provide accessibility for people with motor impairments and disabilities. In this project, we present a model that helps in navigating the mouse and keyboard inputs by voice-based interaction system called ‘Catch-Cursor’ that navigates the cursor through voice commands on the digital screens. The voice commands are obtained using a speech module on Arduino, processed with machine learning on Edge Impulse, and controlled using the PyAutoGUI library on Python.'
         },
-        process: {title: 'Process', img: require('../assets/img/photo/IMG_0601.jpg')},
+        process: {title: 'Process', img: require('../assets/img/works/catchcursor/CatchCursor_process.png')},
         demoVideos: [{
           videoID: '759682871', videoHeight: 400, playerReady: false
         }, {

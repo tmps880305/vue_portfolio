@@ -13,11 +13,11 @@
       <b-row class="justify-content-center">
         <b-col xl="1"></b-col>
         <b-col xl="3" align-self="center">
-          <div class="t-tl-1">
-            <p>Hi, I'm Jen-I Wang, a</p>
-            <p>UI developer / </p>
-            <p>UX researcher /</p>
-            <p>Front-end developer</p>
+          <div class="t-tl-0">
+            <p>Hi, I'm also a</p>
+            <p>Snowboard Instructor / </p>
+            <p>Coffee Barista /</p>
+            <p>Photographer</p>
           </div>
         </b-col>
         <b-col xl="3" align-self="center">
@@ -105,7 +105,7 @@
     },
     data() {
       return {
-        selfPic: require('../assets/img/self.jpg'),
+        selfPic: require('../assets/img/self/self.jpg'),
         abouts: [{
           title: 'Snowboarding',
           sentence: 'I love snowboarding! I have been practicing and training since 10, and I was certificated as an instructor in 2014.',
