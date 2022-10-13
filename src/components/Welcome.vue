@@ -40,30 +40,30 @@
       <b-row class="justify-content-center" v-for="mainPic in mainPics" :data="mainPic" :key="mainPic.id">
 
         <b-col v-if="mainPic.loc=='left'" xl="5" align-self="center">
-          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+          <div class="ratio" style="--bs-aspect-ratio: 50%;cursor: pointer;" @click="routePage(mainPic.link)">
             <img :src="mainPic.source" style="width: 100%">
           </div>
         </b-col>
         <b-col v-else-if="mainPic.loc=='right'" xl="3" align-self="center">
-          <div class="t-tl-1">
+          <div class="t-tl-1" style="cursor: pointer;" @click="routePage(mainPic.link)">
             <a>{{mainPic.title}}</a>
           </div>
-          <div class="t-it-1">
+          <div class="t-it-1" style="cursor: pointer;" @click="routePage(mainPic.link)">
             <a>{{mainPic.prompt}}</a>
           </div>
         </b-col>
 
 
         <b-col v-if="mainPic.loc=='right'" xl="5" align-self="center">
-          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+          <div class="ratio" style="--bs-aspect-ratio: 50%;cursor: pointer;" @click="routePage(mainPic.link)">
             <img :src="mainPic.source" style="width: 100%">
           </div>
         </b-col>
         <b-col v-else-if="mainPic.loc=='left'" xl="3" align-self="center">
-          <div class="t-tl-1">
+          <div class="t-tl-1" style="cursor: pointer;" @click="routePage(mainPic.link)">
             <a>{{mainPic.title}}</a>
           </div>
-          <div class="t-it-1">
+          <div class="t-it-1" style="cursor: pointer;" @click="routePage(mainPic.link)">
             <a>{{mainPic.prompt}}</a>
           </div>
         </b-col>
@@ -96,7 +96,7 @@
         <b-col xl="6">
           <b-row>
             <b-col xl="6" class="mt-3 mb-2" v-for="interest in interests" :data="interest" :key="interest.id">
-              <div class="ratio ratio-1x1">
+              <div class="ratio ratio-1x1" style="cursor: pointer" @click="routePage(interest.link)">
                 <img :src="interest.src" style="width: 100%">
               </div>
             </b-col>
@@ -131,37 +131,54 @@
       return {
         selfPic: require('../assets/img/draft/Self_draft.png'),
         interest: require('../assets/img/interests/snowboard_main.jpg'),
-        interests: [{
-          title: 'Snowboard', src: require('../assets/img/interests/snowboard_main.jpg')
-        }, {
-          title: 'Coffee', src: require('../assets/img/interests/coffee_main.jpg')
-        }, {
-          title: 'Photography', src: require('../assets/img/interests/photo_main.jpg')
-        }, {
-          title: 'Freedive', src: require('../assets/img/interests/freedive_main.jpg')
-        }],
+        interests: [
+          {
+            title: 'Snowboard',
+            src: require('../assets/img/interests/snowboard_main.jpg'),
+            link: '/about'
+          }, {
+            title: 'Coffee',
+            src: require('../assets/img/interests/coffee_main.jpg'),
+            link: '/about'
+          }, {
+            title: 'Photography',
+            src: require('../assets/img/interests/photo_main.jpg'),
+            link: '/about'
+          }, {
+            title: 'Freedive',
+            src: require('../assets/img/interests/freedive_main.jpg'),
+            link: '/about'
+          }
+        ],
         mainPics: [
           {
             loc: 'left',
             title: 'CatchCursor',
             prompt: 'Voice User Interface to control the cursor',
-            source: require(`../assets/img/works/catchcursor/CatchCursor_main.jpg`)
+            source: require(`../assets/img/works/catchcursor/CatchCursor_main.jpg`),
+            link: '/catchcursor'
           },
           {
             loc: 'right',
             title: 'Pixel Paper',
             prompt: 'UX research for a college course system',
-            source: require(`../assets/img/works/pixelpaper/PixelPaper_main.jpg`)
+            source: require(`../assets/img/works/pixelpaper/PixelPaper_main.jpg`),
+            link: '/pixelpaper'
           },
           {
             loc: 'left',
             title: 'Zoom Redesign',
             prompt: 'Improve Zoom for online course conditions',
-            source: require(`../assets/img/works/zoomredesign/ZoomRedesign_main.jpg`)
+            source: require(`../assets/img/works/zoomredesign/ZoomRedesign_main.jpg`),
+            link: '/zoomredesign'
           }]
       }
     },
-    methods: {},
+    methods: {
+      routePage(val) {
+        this.$router.push(val)
+      }
+    },
   }
 </script>
 
