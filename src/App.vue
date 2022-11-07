@@ -55,7 +55,8 @@
         window.scrollTo(0, 0);
       },
       gotoPage() {
-        window.open("https://drive.google.com/file/d/15Tc6jKU0lvtD7MOIEyOTGuAPv2xfRdwe/view?usp=sharing")
+        window.open("https://drive.google.com/file/d/1WGzdJTH2XVJ2jpC0J0nBBxejS8alp6Md/view?usp=share_link")
+        // window.open(require('./assets/file/resume.pdf'),'_blank')
       }
     }
   }
