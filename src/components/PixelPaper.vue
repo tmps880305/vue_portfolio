@@ -43,7 +43,7 @@
       <b-row>
         <b-col>
           <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
+<!--          <div style="height: 120px;background-color: transparent"></div>-->
         </b-col>
       </b-row>
       <!---->
@@ -67,23 +67,23 @@
       </b-row>
 
       <!--End of page-->
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
+<!--      <b-row>-->
+<!--        <b-col>-->
+<!--          <div style="height: 60px;background-color: transparent"></div>-->
+<!--        </b-col>-->
+<!--      </b-row>-->
       <!---->
     </b-container>
 
     <!--Page 3-->
     <b-container fluid>
       <!--Start of page-->
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
+<!--      <b-row>-->
+<!--        <b-col>-->
+<!--          <div style="height: 60px;background-color: transparent"></div>-->
+<!--          <div style="height: 120px;background-color: transparent"></div>-->
+<!--        </b-col>-->
+<!--      </b-row>-->
       <!---->
 
       <b-row class="justify-content-center">
@@ -394,7 +394,7 @@
         }, {
           id: 1,
           title: 'Problem',
-          sentence: 'Is Pixel Paper usable enough for students with/without experience using online course system?'
+          sentence: 'Pixel Paper could become more usable by speaking  the user language and increasing its consistency.'
         }, {
           id: 2,
           title: 'Solution',

@@ -18,7 +18,7 @@
             <a>{{mainInfo.title}}</a>
           </div>
 
-          <div v-if="mainInfo.id <mainInfos.length-1" class="t-it-1">
+          <div v-if="mainInfo.id < mainInfos.length-1" class="t-it-1">
             <a v-for="item in mainInfo.items" :data="item" :key="item.id">{{item}}<br></a>
           </div>
           <div v-else-if="mainInfo.id ===2">
@@ -42,7 +42,7 @@
       <b-row>
         <b-col>
           <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
+          <div style="height: 60px;background-color: transparent"></div>
         </b-col>
       </b-row>
       <!---->
@@ -66,11 +66,11 @@
       </b-row>
 
       <!--End of page-->
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
+<!--      <b-row>-->
+<!--        <b-col>-->
+<!--          <div style="height: 60px;background-color: transparent"></div>-->
+<!--        </b-col>-->
+<!--      </b-row>-->
       <!---->
     </b-container>
 
@@ -80,7 +80,7 @@
       <b-row>
         <b-col>
           <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
+<!--          <div style="height: 120px;background-color: transparent"></div>-->
         </b-col>
       </b-row>
       <!---->
@@ -333,7 +333,7 @@
         }, {
           id: 1,
           title: 'Problem',
-          sentence: 'Construct Voice User Interface to allow the user to control devices with speech input.'
+          sentence: 'Physical interface control might not be usable for people with hand-related impairments or situational impairments.'
         }, {
           id: 2,
           title: 'Solution',

@@ -42,7 +42,7 @@
       <b-row>
         <b-col>
           <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
+          <div style="height: 60px;background-color: transparent"></div>
         </b-col>
       </b-row>
       <!---->
@@ -66,11 +66,11 @@
       </b-row>
 
       <!--End of page-->
-      <b-row>
-        <b-col>
-          <div style="height: 60px;background-color: transparent"></div>
-        </b-col>
-      </b-row>
+<!--      <b-row>-->
+<!--        <b-col>-->
+<!--          <div style="height: 60px;background-color: transparent"></div>-->
+<!--        </b-col>-->
+<!--      </b-row>-->
       <!---->
     </b-container>
 
@@ -80,7 +80,7 @@
       <b-row>
         <b-col>
           <div style="height: 60px;background-color: transparent"></div>
-          <div style="height: 120px;background-color: transparent"></div>
+<!--          <div style="height: 120px;background-color: transparent"></div>-->
         </b-col>
       </b-row>
       <!---->
@@ -406,7 +406,7 @@
         }, {
           id: 1,
           title: 'Problem',
-          sentence: 'Zoom could be improved to be more usable for online courses.'
+          sentence: 'How might we improve Zoom to be more usable for online courses.'
         }, {
           id: 2,
           title: 'Solution',

@@ -80,3 +80,33 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+/* Temporary use for images in Interests */
+.interest-img-wrap {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.interest-img-container {
+  width: 70%;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.interest-img {
+  width: 20%;
+  aspect-ratio: 40/54;
+  /*width: 400px;*/
+  /*height: 540px;*/
+}
+
+.interest-img img {
+  width: 100%;
+  height: 100%;
+}
